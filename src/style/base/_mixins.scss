@@ -1,0 +1,6 @@
+@mixin font-style ($font, $size, $color:black, $transform:none) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    text-transform: $transform;
+};

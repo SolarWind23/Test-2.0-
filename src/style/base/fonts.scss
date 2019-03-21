@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato/lato-black-webfont.eot');
+    src: url('../fonts/lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-black-webfont.woff2') format('woff2'),
+         url('../fonts/lato/lato-black-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato/lato-bold-webfont.eot');
+    src: url('../fonts/lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato/lato-light-webfont.eot');
+    src: url('../fonts/lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato/lato-light-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato/lato-regular-webfont.eot');
+    src: url('../fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mgopen_modataregular';
+    src: url('../fonts/mgOpen/mgopen_modata_regular-webfont.eot');
+    src: url('../fonts/mgOpen/mgopen_modata_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mgOpen/mgopen_modata_regular-webfont.woff2') format('woff2'),
+         url('../fonts/mgOpen/mgopen_modata_regular-webfont.woff') format('woff'),
+         url('../fonts/mgOpen/mgopen_modata_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway/raleway-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway/raleway-medium-webfont.eot');
+    src: url('../fonts/raleway/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-medium-webfont.woff') format('woff'),
+         url('../fonts/raleway/raleway-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway/raleway-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../../fonts/raleway/raleway-semibold-webfont.eot');
+    src: url('../../fonts/raleway/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../../fonts/raleway/raleway-semibold-webfont.woff') format('woff'),
+         url('../../fonts/raleway/raleway-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+   
+}
+
+@import '../base/icons/fontawesome.scss'; 

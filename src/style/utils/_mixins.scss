@@ -1,0 +1,100 @@
+@mixin font-style ($font, $size, $color:black, $transform:none) {
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    text-transform: $transform;
+};
+
+@mixin hexagon ($width,  $height, $bg-color, $margin:20px) {
+    .hexagon-wrapper {
+        width: $width;
+        height: $height;
+        text-align: center;
+        margin: $margin;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hexagon {
+        background-color: $bg-color;
+        height: 100%;
+        width: calc(100% * 0.57735);
+        display: inline-block;
+    }
+    
+    .hexagon:before {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(60deg);
+    }
+    
+    .hexagon:after {
+        position: absolute;
+        top: 0;
+        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        background-color: inherit;
+        height: inherit;
+        width: inherit;
+        content: '';
+        transform: rotateZ(-60deg);
+    }
+}
+
+@mixin scroll-bar ($width,  $height, $bg-color, $position, $x:0%) {
+    .scrollbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: $position;
+        bottom:  $x;
+        left:50%;
+        transform: translateX(-50%);
+    
+        .hexagon-wrapper {
+            width: $width;
+            height: $height;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        };
+    
+        .hexagon {
+            height: 100%;
+            width: calc(100% * 0.57735);
+            display: inline-block;
+            background-color:$bg-color;
+        };
+        
+        .hexagon:before {
+            position: absolute;
+            top: 0;
+            right: calc((100% / 2) - ((100% * 0.57735) / 2));
+            background-color: inherit;
+            height: inherit;
+            width: inherit;
+            content: '';
+            transform: rotateZ(60deg);
+        };
+        
+        .hexagon:after {
+            position: absolute;
+            top: 0;
+            right: calc((100% / 2) - ((100% * 0.57735) / 2));
+            background-color: inherit;
+            height: inherit;
+            width: inherit;
+            content: '';
+            transform: rotateZ(-60deg);
+        };
+    
+        &_side{
+            border:1px solid $bg-color;
+            width:248px;
+        };
+    };
+}

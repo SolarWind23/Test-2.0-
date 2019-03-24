@@ -5,7 +5,7 @@
     position: relative;
     width: 100%;
 
-    &__title {
+    &-title {
         @include font-style($raleway-bo,30px,$w);
         margin-bottom: 27px;
     };
@@ -45,11 +45,12 @@
             overflow: hidden;
 
             
-            &__item {
+            &-item {
                 flex-grow: 1;
                 position: relative;
                 transition: 1.5s all;
                 overflow: hidden;
+
                 .tab-img {
                     width: 100%;
                     height: 100%;
@@ -58,9 +59,10 @@
                 .design-wrapper {
                     width: 100%;
                     height: 100%;
-                    z-index: 9999;
+                    z-index: 999;
                     position: absolute;
                     background: $b;
+                    opacity: 0.9;
                     left: 50%;
                     bottom: 50%;
                     transform: translate(-50%, -50%);
@@ -92,4 +94,4 @@
     };
     
 };
-@include scroll-bar (20px, 20px, $r, absolute, -1%);
+@include scroll-bar (20px, 20px, $r, absolute, -10px);

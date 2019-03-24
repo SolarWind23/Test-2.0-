@@ -5,25 +5,29 @@
         text-align: center;
         margin-bottom:102px;
 
-        &__title {
+        &-title {
             @include font-style($raleway-bo, 30px, $b);
             margin-bottom: 50px;
-
-            &_colored {
-                color:$r;
-            };
         };
 
-        &__text {
-            @include font-style($lato-bo, 16px, $b);
-            &_colored {
-                color:$r;
-            };
+        .colored {
+            color:$r;
+        };
+
+        &-text {
+            @include font-style($lato-bo, 16px, $b);    
         };
     };
 
     .description {
-        text-align: unset;
+        
+        
+        &-text {
+            @include font-style($lato-r, 16px, #505050); 
+            line-height: 1.375;
+        text-align: justify;
+            margin-bottom: 41px;
+        };
 
         .toggles {
             .card {
@@ -64,122 +68,50 @@
     };
 
     .hexagons-img {
+       
         position: relative;
-        height: 370px;
-        
-        .left__hexagon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left-hexagon {
             position: absolute;
             left: 0px;
         };
 
-        .center__hexagon-wrapper{
+        .right-hexagon {
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: -20px;
-            z-index: 1;
+            right: 0px;
+        };
+
+        .center-hexagon-wrapper {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 890;
+
+
+            @include hexagon (370px,  370px, $r, 0px);
             
-            .hexagon-wrapper {
-                width: 370px;
-                height: 370px;
-                text-align: center;
-                position: relative;
-                display: inline-block;
-    
-                .hexagon {
-                    background-color:$r;
-                    height: 100%;
-                    width: calc(100% * 0.57735);
-                    display: inline-block;
-        
-                    &::before {
-                        position: absolute;
-                        top: 0;
-                        right: calc((100% / 2) - ((100% * 0.57735) / 2));
-                        background-color: inherit;
-                        height: inherit;
-                        width: inherit;
-                        content: '';
-                        transform: rotateZ(60deg);
-                    }
-        
-                    &::after {
-                        position: absolute;
-                        top: 0;
-                        right: calc((100% / 2) - ((100% * 0.57735) / 2));
-                        background-color: inherit;
-                        height: inherit;
-                        width: inherit;
-                        content: '';
-                        transform: rotateZ(-60deg);
-                    }
-                };
-    
-                .center__hexagon {
-                    position: absolute;
-                    left: -23px;
-                    top: 5px;
-                };
+            .center-hexagon {
+                position: absolute;
+                top:5px;
+                left: 50%;
+                transform: translateX(-50%);
             };
 
         };
-
-        .right__hexagon {
-            position: absolute;
-            right: 0px;
-        }
-        
-
+    
     };
 
-    .scrollbar {
+    .scrollbar-wrapper {
         margin: 95px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-
-        .hexagon-wrapper {
-        width: 20px;
-        height: 20px;
-        text-align: center;
         position: relative;
-        display: inline-block;
-        
-        };
 
-        .hexagon {
-            height: 100%;
-            width: calc(100% * 0.57735);
-            display: inline-block;
-            background-color:$b;
-        };
-        
-        .hexagon:before {
-            position: absolute;
-            top: 0;
-            right: calc((100% / 2) - ((100% * 0.57735) / 2));
-            background-color: inherit;
-            height: inherit;
-            width: inherit;
-            content: '';
-            transform: rotateZ(60deg);
-        };
-        
-        .hexagon:after {
-            position: absolute;
-            top: 0;
-            right: calc((100% / 2) - ((100% * 0.57735) / 2));
-            background-color: inherit;
-            height: inherit;
-            width: inherit;
-            content: '';
-            transform: rotateZ(-60deg);
-        };
-
-        &_side{
-            border:1px solid $b;
-            width:248px;
-        };
+        @include scroll-bar (20px, 20px, $b, absolute, 0px);
     };
 
     .flat-design-wrapper {

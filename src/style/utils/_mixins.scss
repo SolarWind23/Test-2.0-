@@ -25,7 +25,7 @@
     .hexagon:before {
         position: absolute;
         top: 0;
-        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        right: calc((50%) - ((100% * 0.57735) / 2));
         background-color: inherit;
         height: inherit;
         width: inherit;
@@ -36,7 +36,7 @@
     .hexagon:after {
         position: absolute;
         top: 0;
-        right: calc((100% / 2) - ((100% * 0.57735) / 2));
+        right: calc((50%) - ((100% * 0.57735) / 2));
         background-color: inherit;
         height: inherit;
         width: inherit;
@@ -45,13 +45,13 @@
     }
 }
 
-@mixin scroll-bar ($width,  $height, $bg-color, $position, $x:0%) {
+@mixin scroll-bar ($width,  $height, $bg-color, $position, $y:0%) {
     .scrollbar {
         display: flex;
         justify-content: center;
         align-items: center;
         position: $position;
-        bottom:  $x;
+        bottom:  $y;
         left:50%;
         transform: translateX(-50%);
     
@@ -92,7 +92,7 @@
             transform: rotateZ(-60deg);
         };
     
-        &_side{
+        &-side{
             border:1px solid $bg-color;
             width:248px;
         };

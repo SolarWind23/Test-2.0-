@@ -1,0 +1,102 @@
+.product {
+    padding: 100px 0px 0px 0px;
+    margin-bottom: 386px;
+
+    .features {
+       text-align: center;
+        margin-bottom:175px;
+
+       &-title{
+            @include font-style($raleway-bo, 30px, $b);
+            margin-bottom: 50px;
+            .colored {
+                color:$r;
+            };
+       } ;
+
+       &-text {
+           @include font-style ($lato-bo, 16px, #505050);
+            .colored {
+                color:$r;
+            };
+       };
+    };
+
+    
+    .options {
+
+        &-item-left {
+            @include font-style($raleway-m, 20px, $b, uppercase);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border: 1px solid #e7e7e7;
+            margin-bottom: 23px;
+            padding: 10px 20px;
+
+            .options-item-icon {
+                position: relative;
+                display: flex;
+                margin-left: 10px;
+
+                @include hexagon(32px,32px,#e7e7e7,relative);
+                
+        
+                .fa-check {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 13px;
+                }
+            };
+
+
+            &:hover {
+                background: $r;
+                color: $w;
+
+
+                .fa-check {
+                    
+                    color: $r;
+                }
+            }
+
+        };
+        &-item-right {
+            @extend .options-item-left;
+            justify-content: flex-start;
+
+
+            .options-item-icon {
+                margin: 0px 10px 0px 0px;
+            }
+        }
+    }
+
+    &-image {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    };
+
+    &-icon {
+        position: absolute;
+        top: -76px;
+    };
+
+    .byTheme {
+        position: absolute;
+        bottom: -240px;
+        background: #393939;
+        border: none;
+        @include font-style($raleway-m, 20px, $w, uppercase);
+        padding: 18px 40px;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    };
+};

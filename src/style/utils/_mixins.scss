@@ -45,13 +45,14 @@
     }
 }
 
-@mixin scroll-bar ($width,  $height, $bg-color, $position, $y:0%) {
+@mixin scroll-bar ($width,  $height, $bg-color, $position, $marging:0px, $y:0% ) {
     .scrollbar {
         display: flex;
         justify-content: center;
         align-items: center;
         position: $position;
         bottom:  $y;
+        margin-top: $marging;
         left:50%;
         transform: translateX(-50%);
     
@@ -98,3 +99,23 @@
         };
     };
 }
+
+@mixin introduce ($marginContainer:0px, $marginTitle:0px, $color:$w) {
+    .introduce {
+        text-align: center;
+        margin-bottom:$marginContainer;
+
+        &-title {
+            @include font-style($raleway-bo, 30px, $color);
+            margin-bottom: $marginTitle;
+        };
+
+        .colored {
+            color:$r;
+        };
+
+        &-text {
+            @include font-style($lato-bo, 16px, $color);  
+        };  
+    };
+};

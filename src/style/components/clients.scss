@@ -1,0 +1,87 @@
+.clients {
+    background: url('../../img/clients-bg.png');
+    padding: 95px 0px;
+    position: relative;
+    @include introduce (100px, 50px);
+
+    .row {
+        margin: auto;
+    };
+
+    .client-say-carousel {
+        .carousel {
+            text-align: center;
+            &-title {
+                @include font-style($raleway-m, 20px,$w, uppercase);
+                margin-bottom: 50px;
+            };
+            &-text {
+                @include font-style($lato-r, 16px, #a4a4a4);
+                margin-bottom: 47px;
+            }
+
+            .client {
+                &-img {
+                    margin-bottom: 17px;
+                };
+                &-name {
+                    @include font-style($raleway-bo, 16px, $r, uppercase);
+                    margin-bottom: 27px;
+                }
+            };
+
+            &-indicators {
+                margin-bottom: 0px;
+
+
+                .indicator {
+                    border: 1px solid transparent;
+                    background: $w;
+                    width: 8px;
+                    height: 8px;
+    
+                    &.active {
+                        background: $r;
+                    }
+                }
+            }
+            
+        };
+        
+    };
+        
+    &-logos {
+        @include font-style($mgope, 24px, $b);
+
+        .clients-logo {
+            background: url('../../img/clients-logo.png'),no-repeat;
+            background-size:cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 45px 40px;
+     
+             &:nth-child(even) {
+                 margin-left: 15px;
+             };
+             &:nth-child(odd) {
+                 margin-right: 15px;
+             };
+             &:nth-child(3) {
+                 margin-top: 40px;
+             };
+             &:nth-child(4) {
+                 margin-top: 40px;
+             };
+     
+            .text {
+                 margin-left: 10px;
+            };
+     
+         };
+    };
+
+
+    @include scroll-bar (20px, 20px, $r, absolute, -10px);
+
+};

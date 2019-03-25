@@ -111,7 +111,7 @@
         align-items: center;
         position: relative;
 
-        @include scroll-bar (20px, 20px, $b, absolute, 0px);
+        @include scroll-bar (20px, 20px, $b, absolute, 0,0px);
     };
 
     .flat-design-wrapper {

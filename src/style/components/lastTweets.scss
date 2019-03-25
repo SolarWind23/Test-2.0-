@@ -1,0 +1,25 @@
+.last-tweets {
+    position: relative;
+    padding: 100px 0px; 
+    background: url("../img/last-tweets-bg.png"), no-repeat;
+    background-size: cover;
+    .tweets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-icon {
+            color:$r;
+            font-size: 36px;
+            margin-bottom: 25px;
+        };
+
+        &-text {
+            @include font-style($lato-r,16px, $w);
+            display: flex;
+            text-align: center;
+            margin: auto;
+            width: 60%;
+        }
+    };
+}

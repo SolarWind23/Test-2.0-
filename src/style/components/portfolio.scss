@@ -92,6 +92,8 @@
 
         };
     };
-    
+    .scrollbar-wrapper {
+        @include scroll-bar (20px, 20px, $r, absolute, 0px,-10px);
+    }
 };
-@include scroll-bar (20px, 20px, $r, absolute, -10px);
+

@@ -1,0 +1,69 @@
+.prices {
+    @include introduce (100px, 50px, $b,$b);
+    padding: 110px 0px 100px 0px;
+    
+    .offer-item {
+        
+        &:hover {
+            .offer-price {
+                background: $r;
+                color:$w;
+                border:1px solid transparent;
+                .year {
+                    color:$w;
+                }
+            };
+            .offer-order {
+                
+                .order {
+                    background: $r;
+                    color:$w;
+
+                    &:focus {
+                        border: transparent;
+                        outline: none;
+                    }
+                };
+            }
+           
+        };
+
+    };
+
+    .card {
+        &-header {
+            background:$b;
+            @include font-style($raleway-m,20px,$w, uppercase);
+        };
+        .offer {
+            &-title {
+                background:$b;
+                @include font-style($raleway-m,20px,$w, uppercase);
+            };
+            &-price {
+    
+                @include font-style($lato-bl,50px,#262626, uppercase);
+                .year{
+                    @include font-style($lato-r,16px,#262626);
+                };
+            };
+            &-datasheet {
+               
+                @include font-style($lato-r,16px,#262626);
+            }
+            &-order {
+                background: $w;
+                .order {
+                    border: none;
+                    display: flex;
+                    padding: 13px 50px;
+                    align-items: center;
+                    background: #262626;
+                    @include font-style($raleway-r,16px,$w, uppercase);
+                }
+            }
+    
+        };
+        
+    };
+};

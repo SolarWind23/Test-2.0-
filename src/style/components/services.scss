@@ -1,0 +1,60 @@
+.services {
+    margin-top: 100px;
+    padding: 100px 0px 0px 0px;
+    background: #272727;
+    @include introduce (90px, 48px, $w, #a4a4a4);
+
+
+    .technology {
+
+        .item {
+            &-icon {
+                position: relative;
+
+                &-symbol {
+                    color: #262626;
+                    position: absolute;
+                    left:50%;
+                    top:50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 25px;
+                };
+            };
+
+            &-title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                @include hexagon (60px, 60px, #a4a4a4, 0px);
+                @include font-style ($raleway-m,20px,$w,uppercase);
+            };
+
+
+            &-text {
+                margin: 0px 0px 0px 30px;
+            };
+
+            &-description {
+                @include font-style($lato-r,16px,#a4a4a4);
+                padding: 30px 30px 30px 30px;
+                margin-bottom: 50px;
+                background: #343434;
+            }
+
+            &:hover {
+                .item-icon-symbol {
+                    color:$w;
+                };
+                @include hexagon (60px, 60px, $r, 0px);
+
+                .item-description {
+                    color:$w;
+                    background: #3d2329;
+                };
+            };
+        };
+    };
+
+    @include scroll-bar (20px, 20px, $r, relative, 70px, -11px);
+};
+  

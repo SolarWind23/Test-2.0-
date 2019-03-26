@@ -55,6 +55,7 @@
         margin-top: $marging;
         left:50%;
         transform: translateX(-50%);
+        z-index: 890;
     
         .hexagon-wrapper {
             width: $width;
@@ -100,13 +101,13 @@
     };
 }
 
-@mixin introduce ($marginContainer:0px, $marginTitle:0px, $color:$w) {
+@mixin introduce ($marginContainer:0px, $marginTitle:0px, $colorTitle:$w, $colorText:$w) {
     .introduce {
         text-align: center;
         margin-bottom:$marginContainer;
 
         &-title {
-            @include font-style($raleway-bo, 30px, $color);
+            @include font-style($raleway-bo, 30px, $colorTitle);
             margin-bottom: $marginTitle;
         };
 
@@ -115,7 +116,7 @@
         };
 
         &-text {
-            @include font-style($lato-bo, 16px, $color);  
+            @include font-style($lato-bo, 16px, $colorText);  
         };  
     };
 };

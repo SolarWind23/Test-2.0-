@@ -1,6 +1,6 @@
 .skills {
     padding: 18px 0px;
-    @include introduce (100px, 50px, $b);
+    @include introduce (100px, 50px, $b, $b);
     position: relative;
 
     .infographic {

@@ -1,0 +1,81 @@
+.blog {
+    @include introduce (100px, 50px, $b,$b);
+    padding: 110px 0px 100px 0px;
+
+    .card {
+        margin-bottom: 50px;
+        border: none;
+        
+        &-img-wrapper {
+            position: relative;
+
+            .overlay {
+                position: absolute;
+                background: $w;
+                z-index:1;
+                bottom: 50%;
+                transform: translateY(50%);
+                opacity: 0;
+            }
+        };
+
+        &-body {
+            padding:0px 30px;
+        };
+
+        &-title {
+            @include font-style($raleway-sb,20px,#2e2e2e);
+        };
+
+        &-text {
+            @include font-style($lato-r,16px,#505050); 
+        };
+
+        .info {
+            margin:0px 11px;
+            @include font-style($lato-r,12px,#a2a2a2);
+            &-user,&-comment,&-view {
+                margin-right: 8px;
+            };
+        };
+
+        .btn {
+            @include font-style($lato-r,16px,$w,uppercase);
+            padding: 15px;
+            line-height: 1.2;
+            text-align: center;
+            border-radius: none;
+            border: none;
+
+            &:focus{
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+        };
+
+        &:hover {
+            .card-img-wrapper {
+                .overlay {
+                    opacity: 0.502;
+                    transition: all .5s;
+                };
+            };
+            .btn {
+               background: $r;
+               border: none;
+               outline: none;
+               box-shadow: none;
+               transition: all .5s;
+            };
+        };
+    };
+
+    .view-more {
+        &-btn {
+            color: #a2a2a2;
+            font-size:44px;
+        };
+    };
+};
+  

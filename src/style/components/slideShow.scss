@@ -1,13 +1,37 @@
 .slider-wrapper {
     height: 100%;
     position: relative;
-    
-    
 };
 
 .carousel {
-    
-    
+    &-inner {
+        @media (max-width: 575.98px) { 
+          height: 100vh;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            height: 100vh;
+        };
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            height: 100vh;
+        };
+        @media (min-width: 992px) and (max-width: 1199.98px) { 
+            height: 100vh;
+        };
+    };
+    &-item {
+        @media (max-width: 575.98px) { 
+            height: 100%;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            height: 100%;
+        };
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            height: 100%;
+        };
+        @media (min-width: 992px) and (max-width: 1199.98px) { 
+            height: 100%;
+        };
+    }
     &-img {
         filter: brightness(30%);
         transition: .2s all;
@@ -25,18 +49,41 @@
         transform: translateY(-55%);
         width: 71%;
         margin: 0 auto;
-    
-      
+
+        @media (max-width: 575.98px) { 
+            top:50%;
+            transform: translateY(-50%);
+            width: 70%;
+            margin: 0 auto;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+            top:50%;
+            transform: translateY(-50%);
+            width: 70%;
+            margin: 0 auto;
+        };
+
         &-title {
             @include font-style($raleway-bo, 30px, $w);
             line-height: 1.2;
             text-align: center;
             margin-bottom: 45px;
-    
+
+            @media (max-width: 575.98px) { 
+                @include font-style($raleway-bo, 20px, $w);
+                margin-bottom: 15px;
+            };
+            @media (min-width: 576px) and (max-width: 767.98px) { 
+                @include font-style($raleway-bo, 30px, $w);
+                margin-bottom: 30px;
+            };
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                margin-bottom: 30px;
+            };
+            
             .decorate {
                 color:$r;
             };
-    
         };
     
         &-text {
@@ -44,6 +91,27 @@
             line-height: 1.375;
             text-align: center;
             margin-bottom: 50px;
+
+            @media (max-width: 575.98px) { 
+                @include font-style($lato-r, 14px, $w);
+                line-height: 1.2;
+                margin-bottom: 20px;
+            };
+            @media (min-width: 576px) and (max-width: 767.98px) { 
+                @include font-style($lato-r, 17px, $w);
+                line-height: 1.5;
+                margin-bottom: 20px;
+            };
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                @include font-style($lato-r, 17px, $w);
+                line-height: 1.5;
+                margin-bottom: 20px;
+            };
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                @include font-style($lato-r, 18px, $w);
+                line-height: 1.6;
+                margin-bottom: 30px;
+            };
         };
     
         .btn-wrapper {
@@ -58,8 +126,19 @@
                 @include font-style($raleway-m, 20px, $w, uppercase);
                 background: #131313;
                 padding: 17px 40px 18px 40px;
-            
-    
+
+                @media (max-width: 575.98px) { 
+                    @include font-style($raleway-m, 12px, $w, uppercase);
+                    padding: 17px 15px 18px;
+                };
+                @media (min-width: 576px) and (max-width: 767.98px) { 
+                    @include font-style($raleway-m, 17px, $w, uppercase);
+                    padding: 17px 35px 18px;
+                };
+                @media (min-width: 768px) and (max-width: 991.98px) { 
+                    @include font-style($raleway-m, 17px, $w, uppercase);
+                    padding: 17px 35px 18px;
+                };
                 &:hover {
                     background: $r;
                 };
@@ -68,13 +147,10 @@
                     outline: none;
                     box-shadow: none;
                 };
-    
             };
-    
         };
-    
     };
-}
+};
 
 
 .carousel-control {
@@ -84,15 +160,20 @@
         top: 50%;
         transform: translateY(-50%);
         font-size: 25px;
+        @media (max-width: 575.98px) { 
+            font-size: 20px;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+            font-size: 20px;
+        };
+        
 
         &:hover {
             .carousel-controls {
                 
                 color:$r;            
             };
-
         };
-
     };
 
     &-next {
@@ -101,15 +182,25 @@
         top: 50%;
         transform: translateY(-50%);
         font-size: 25px;
+        @media (max-width: 575.98px) { 
+            font-size: 20px;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+            font-size: 20px;
+        };
 
         &:hover {
             .carousel-controls {
-              
                 color:$r;            
             };
-
         };
-
     };
 
 };
+
+
+
+
+// @media (min-width: 1200px) and (max-width: 1276.98px) { 
+//     padding: 0px 100px;
+// }; 

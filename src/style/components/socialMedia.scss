@@ -1,6 +1,6 @@
 .social-media {
     position: relative;
-
+    cursor: pointer;
     &:hover {
         .social-media-bg {
             filter: brightness(50%);

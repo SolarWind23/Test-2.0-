@@ -4,6 +4,7 @@
 };
 .map-wrapper {
     position: relative;
+   
     .talk-buble-wrapper {
         position: absolute;
         top: 60%;
@@ -48,6 +49,7 @@
         bottom: 0px;
         right: 17.85%;
         transform: translateX(-17.85);
+        margin: 0px;
         
         .message-title {
             @include font-style($raleway-m, 20px, $b, uppercase);

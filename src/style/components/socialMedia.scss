@@ -1,0 +1,77 @@
+.social-media {
+    position: relative;
+
+    &:hover {
+        .social-media-bg {
+            filter: brightness(50%);
+        };
+    };
+    
+    &-links {
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .title {
+            text-align: center;
+            margin-bottom: 50px;
+            @include font-style($raleway-bo, 30px, $w);
+            .colored {
+                color:$r;
+            };
+        };
+
+        .link {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+         
+       
+            @include hexagon(75px,75px,transparent, 0px);
+            .hexagon {
+                text-align: center;
+                border-top:1px solid $r;
+                border-bottom:1px solid $r;
+
+                &::after {
+                    border-top:1px solid $r;
+                    border-bottom:1px solid $r;
+                };
+                &::before {
+                    border-top:1px solid $r;
+                    border-bottom:1px solid $r;
+                };
+
+                .simbol {
+                    color: $r;
+                    font-size: 20px;
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            &:hover {
+                .hexagon {
+                    background: $r;
+                };
+                .simbol {
+                    color: $w;
+                }
+            };
+
+            .info {
+               margin-top: 40px;
+                @include font-style ($lato-r,16px,$w);
+            }
+            
+        };
+
+        
+    };
+    @include scroll-bar (20px, 20px, $r, absolute, 0,-11px);
+};

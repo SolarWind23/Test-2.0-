@@ -25,7 +25,7 @@
         &-text {
             @include font-style($lato-r, 16px, #505050); 
             line-height: 1.375;
-        text-align: justify;
+            text-align: justify;
             margin-bottom: 41px;
         };
 
@@ -162,10 +162,10 @@
 
             &__text {
                 @include font-style ($lato-r,16px,#505050);
-                .Lorem_ipsum_dolor_sit_amet_cras_vitae_sodales_a {
+                
                     line-height: 1.375;
                     text-align: center;
-                };
+    
                   
             };
         };

@@ -11,57 +11,7 @@
 </head>
 <body>
     <header class="header ">
-        <section class="menu">
-        
-          <div class="navigation">
-        
-            <a class="navigation-logo" href="#">
-                <img class="navigation-logo-img" src="./img/logo.png" alt="">
-            </a>
-        
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-              <a class="navbar-brand p-0 m-0" href="#"></a>
-        
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        
-                <ul class="navbar-nav">
-                  <li class="nav-item" >
-                    <a class="nav-link" href="#">home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">about us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">clients</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">team</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">services</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">blog</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">contact</a>
-                  </li>
-                </ul>
-        
-              </div>
-        
-            </nav>
-        
-          </div>
-          
-        </section>
+        <!-- //= './template/navigation.html' -->
     </header>
     <main class="main ">
         <section class="slider-wrapper">
@@ -148,7 +98,7 @@
                 </a>
             </div>
         </section>
-        <div class="about ">
+        <div class="about container-fluid">
             <div class="introduce container">
                 <h5 class="introduce-title">
                     about 
@@ -164,7 +114,7 @@
                 
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="description  col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-md-2 order-sm-2 order-2">
             
                         <p class="description-text">
@@ -242,7 +192,6 @@
                         <img class="right-hexagon " src="./img/about__hexagon_bg2.png" alt="">
             
                     </div>
-                  
                 </div>
             </div>
             
@@ -258,7 +207,7 @@
             
             <div class="flat-design-wrapper container">
                 <div class="info row">
-                    <div class="item col col-sm-6">
+                    <div class="item col col-sm-6 col-md-3 col-lg-3">
                         <div class="item__icon">
                             <div  class="hexagon-wrapper">
                                 <div class="hexagon"></div>
@@ -272,7 +221,7 @@
                         </p>
                     </div>
         
-                    <div class="item col col-sm-6">
+                    <div class="item col col-sm-6 col-md-3 col-lg-3">
                         <div class="item__icon">
                             <div  class="hexagon-wrapper">
                                 <div class="hexagon"></div>
@@ -287,7 +236,7 @@
                         </p>
                     </div>
         
-                    <div class="item col col-sm-6">
+                    <div class="item col col-sm-6 col-md-3 col-lg-3">
                         <div class="item__icon">
                             <div  class="hexagon-wrapper">
                                 <div class="hexagon"></div>
@@ -301,7 +250,7 @@
                         </p>
                     </div>
         
-                    <div class="item col col-sm-6">
+                    <div class="item col col-sm-6 col-md-3 col-lg-3">
                         <div class="item__icon">
                             <div  class="hexagon-wrapper">
                                 <div class="hexagon"></div>
@@ -317,10 +266,701 @@
                 </div>
             </div>
         </div>
-        <!-- //= './template/portfolio' -->
-        <!-- //= './template/productFeatures' -->
-        <!-- //= './template/clients' -->
-        <!-- //= './template/teamwork' -->
+        <div class="portfolio">
+            <div class="portfolio-title">portfolio</div>
+            <div class="tab-panel">                    
+                <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="all" data-toggle="tab" href="#all-tab" role="tab" aria-controls="all-tab" aria-selected="true">
+                            All 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="illustration" data-toggle="tab" href="#illustration-tab" 
+                        role="tab"  aria-selected="false">
+                            Illustration
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="digital-art" data-toggle="tab" href="#digital-art-tab" 
+                        role="tab" aria-controls="digital-art-tab" aria-selected="false">
+                            Digital Art 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="web-design" data-toggle="tab" href="#web-design-tab" 
+                        role="tab" aria-controls="web-design-tab" aria-selected="false">
+                            Web design 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="tab-content" id="myTabContent" >
+                <div class="tab-pane fade show active row no-gutters" id="all-tab" role="tabpanel" aria-labelledby="all">
+                   
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img1.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-5  col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img2.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img3.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img4.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img5.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img6.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img7.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img8.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div> 
+                </div>
+        
+                <div class="tab-pane fade row no-gutters" id="illustration-tab" role="tabpanel">
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img1.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img2.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img3.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img4.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+        
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img5.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img6.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img7.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img8.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+        
+                </div>
+        
+                <div class="tab-pane fade row no-gutters" id="digital-art-tab" role="tabpanel" aria-labelledby="digital-art">
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+        
+                        <img src="./img/tab-img1.png" alt="" class="tab-img">
+        
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+        
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img2.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img3.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img4.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img5.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img6.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img7.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img8.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div> 
+                </div>
+        
+                <div class="tab-pane fade row no-gutters" id="web-design-tab" role="tabpanel" aria-labelledby="web-design">
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+        
+                        <img src="./img/tab-img1.png" alt="" class="tab-img">
+        
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+        
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img2.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img3.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img4.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img5.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img6.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-5 col-sm-2 col-md-2 col-lg-2">
+                        <img src="./img/tab-img7.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div>
+                    <div class="tab-pane-item col-7 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./img/tab-img8.png" alt="" class="tab-img">
+                        <button class="design-wrapper">
+                            <i class="fas fa-plus"></i>
+                            <p class = "text"> design name</p>
+                        </button>
+                    </div> 
+                </div>
+            </div>
+            <div class="scrollbar-wrapper">
+                <div class="scrollbar">
+                    <span class="scrollbar-side"></span>
+                    <div class="hexagon-wrapper">
+                        <div  class="hexagon"></div>
+                    </div>
+                    <span class="scrollbar-side"></span>
+                </div>
+            </div> 
+        </div>
+        <section class="product container">
+                <div class="introduce">
+                    <h5 class="introduce-title">
+                        our 
+                        <span class="colored"> product features </span>
+                    </h5>
+                    <p class="introduce-text">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        <span class="colored">adipiscing elit.</span>
+                        Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+                    </p>
+                </div>
+        
+        
+            <div class="row no-gutters">
+        
+                <div class="options order-3 col-12 order-md-1 col-sm-6 col-md-4">
+                    <div class="options-item-left">
+                        <span class="text">
+                            Unlimited Color Options
+                        </span>
+        
+                        <div class="options-item-icon">
+                            <div  class="hexagon-wrapper">
+                                <div class="hexagon"></div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="options-item-left">
+                        <span class="text">
+                            Outstanding Support
+                        </span>
+                        <div class="options-item-icon">
+                            <div  class="hexagon-wrapper">
+                                <div class="hexagon"></div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="options-item-left">
+                        <span class="text">
+                            Retina Ready
+                        </span>
+                        <div class="options-item-icon">
+                            <div  class="hexagon-wrapper">
+                                <div class="hexagon"></div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+        
+                <div class="product-image order-1 order-md-2 col-12 col-md-4">
+                    <img class = "product-icon"  src="./img/product-features.png" alt="">
+        
+                    <button class="byTheme" role="button" type="submit" value="Submit">
+                        free psd
+                    </button>
+                </div>
+        
+                <div class="options order-3 order-md-3 col-12 col-sm-6 col-md-4">
+        
+                    <div class="options-item-right">
+                        <div class="options-item-icon">
+                            <div  class="hexagon-wrapper">
+                                <div class="hexagon"></div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="text">
+                            Unlimited Color Options
+                        </span>
+                    </div>
+        
+                    <div class="options-item-right">
+                        <div class="options-item-icon">
+                            <div  class="hexagon-wrapper">
+                                <div class="hexagon"></div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="text">
+                            Outstanding Support
+                        </span>
+                    </div>
+        
+                    <div class="options-item-right">
+                        <div class="options-item-icon">
+                            <div  class="hexagon-wrapper">
+                                <div class="hexagon"></div>
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="text">
+                            Retina Ready
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients ">
+            <div class="introduce">
+                <h5 class="introduce-title">
+                    our 
+                    <span class="colored"> clients </span>
+                </h5>
+        
+                <p class="introduce-text">
+                    Lorem ipsum dolor sit amet, consectetur 
+                    <span class="colored"> adipiscing elit.</span> 
+                    Integer sed magna vel velit dignissim luctus eu in urna. 
+                    Dapibus egestas turpis. 
+                </p>
+            </div>
+          
+               
+            <div class="container row">
+                <div class="clients-say d-flex col-12 order-1 col-md-6 order-md-1">
+                    <div class="client-say-carousel">
+                        <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                        
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h5 class="carousel-title">
+                                        happy clients say
+                                    </h5>
+                                    <p class="carousel-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer sed magna vel velit dignissim luctus eu in urna. 
+                                        Dapibus egestas turpis.
+                                    </p>
+                                    <div class="client">
+                                        <img src="./img/client-img.png" alt="" class="client-img">
+                                        <p class="client-name">
+                                            amr srour
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="carousel-item"> 
+                                    <h5 class="carousel-title">
+                                        happy clients say
+                                    </h5>
+                                    <p class="carousel-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer sed magna vel velit dignissim luctus eu in urna. 
+                                        Dapibus egestas turpis.
+                                    </p>
+                                    <div class="client">
+                                        <img src="./img/client-img.png" alt="" class="client-img">
+                                        <p class="client-name">
+                                            buakaw parpramuk
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <h5 class="carousel-title">
+                                        happy clients say
+                                    </h5>
+                                    <p class="carousel-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Integer sed magna vel velit dignissim luctus eu in urna. 
+                                        Dapibus egestas turpis.
+                                    </p>
+                                    <div class="client">
+                                        <img src="./img/client-img.png" alt="" class="client-img">
+                                        <p class="client-name">
+                                            jon snow
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselCaptions" data-slide-to="0" class="indicator active"></li>
+                                <li data-target="#carouselCaptions" data-slide-to="1" class="indicator"></li>
+                                <li data-target="#carouselCaptions" data-slide-to="2" class="indicator"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="clients-logos col-12 order-2 col-md-6 order-md-2">
+                    <div class="row h-100 d-flex justify-content-around align-items-around">
+        
+                        <div class="clients-logo col-12 col-sm-5 col-md-5">
+                            <div class="clients-icon">
+                                <img src="./img/graphicriver-icon.png" alt="">
+                            </div>
+                            <span class="text">
+                                graphicriver
+                            </span> 
+                        </div>
+        
+                        <div class="clients-logo col-12 col-sm-5 col-md-5">
+                            <div class="clients-icon">
+                                <img src="./img/videoHive-icon.png" alt="">
+                            </div>
+                            <span class="text">
+                                videohive
+                            </span> 
+                        </div>
+        
+                        <div class="clients-logo col-12 col-sm-5 col-md-5">
+                            <div class="clients-icon">
+                                <img src="./img/photodune-icon.png" alt="">
+                            </div>
+                            <span class="text">
+                                photodune
+                            </span> 
+                        </div>
+        
+                        <div class="clients-logo col-12 col-sm-5 col-md-5">
+                            <div class="clients-icon">
+                                <img src="./img/codecanion-icon.png" alt="">
+                            </div>
+                            <span class="text">
+                                codecanyon
+                            </span> 
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+                
+            <div class="scrollbar">
+                <span class="scrollbar-side"></span>
+                <div class="hexagon-wrapper">
+                    <div  class="hexagon"></div>
+                </div>
+                <span class="scrollbar-side"></span>
+            </div>
+            
+        </section>
+        <section class="teamwork">
+            <div class="introduce">
+                <h5 class="introduce-title">
+                    our <span class="colored">teamwork </span>
+                </h5>
+        
+                <p class="introduce-text">
+                    Lorem ipsum dolor sit amet, consectetur 
+                    <span class="colored"> adipiscing elit.</span> 
+                    Integer sed magna vel velit dignissim luctus eu in urna. 
+                    Dapibus egestas turpis. 
+                </p>
+            </div>
+            <div class="team container row ">
+        
+                <div class="team-member col">
+        
+                    <div class="team-member-img">
+                        <div class="overlay">
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-facebook-f logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-twitter logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-google-plus-g logo"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/bruce-wane.png" alt="" class="member-picture">
+                    </div>
+                    <p class="team-member-name">
+                        Bruce Wayne
+                    </p>
+                    <p class="team-member-activity">
+                        Webdesigner
+                    </p>
+        
+                </div>
+        
+                <div class="team-member col">
+                    <div class="team-member-img">
+                        <div class="overlay">
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-facebook-f logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-twitter logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-google-plus-g logo"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/amr-srour.png" alt="" class="member-picture">
+                    </div>
+                    <p class="team-member-name">
+                        amr srour
+                    </p>
+                    <p class="team-member-activity">
+                        Webdesigner
+                    </p>
+                </div>
+        
+                <div class="team-member col">
+                    <div class="team-member-img">
+                        <div class="overlay">
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-facebook-f logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-twitter logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-google-plus-g logo"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/sara-doe.png" alt="" class="member-picture">
+                    </div>
+                    <p class="team-member-name">
+                        sara doe
+                    </p>
+                    <p class="team-member-activity">
+                        Webdesigner
+                    </p>
+                </div>
+        
+                <div class="team-member col">
+                    <div class="team-member-img">
+                        <div class="overlay">
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-facebook-f logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-twitter logo"></i>
+                                </div>
+                            </button>
+                            <button class="icons">
+                                <div  class="hexagon-wrapper">
+                                    <div class="hexagon"></div>
+                                    <i class="fab fa-google-plus-g logo"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <img src="./img/jon-de.png" alt="" class="member-picture">
+                    </div>
+                    <p class="team-member-name">
+                        jon de
+                    </p>
+                    <p class="team-member-activity">
+                        Webdesigner
+                    </p>
+                </div>
+            </div>
+            <div class="scrollbar">
+                <span class="scrollbar-side"></span>
+                <div class="hexagon-wrapper">
+                    <div  class="hexagon"></div>
+                </div>
+                <span class="scrollbar-side"></span>
+            </div>
+        </section>
         <!-- //= './template/skills' -->
         <!-- //= './template/services' -->
         <!-- //= './template/prices' -->

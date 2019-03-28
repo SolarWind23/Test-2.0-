@@ -3,22 +3,41 @@
     padding: 95px 0px;
     position: relative;
     @include introduce (100px, 50px);
-
+    @media (max-width: 575.98px) { 
+        padding: 20px 0px;
+        @include media-introduce();
+    };
+   
+    
+    @media (min-width: 992px) and (max-width: 1199.98px) { 
+        
+    };
     .row {
         margin: auto;
     };
 
     .client-say-carousel {
         .carousel {
+            @media (max-width: 575.98px) { 
+                #carouselCaptions+.carousel-inner {
+                    height: 100%;
+                }
+            };
             text-align: center;
             &-title {
                 @include font-style($raleway-m, 20px,$w, uppercase);
                 margin-bottom: 50px;
+                @media (max-width: 575.98px) { 
+                    margin-bottom: 30px;
+                };
             };
             &-text {
                 @include font-style($lato-r, 16px, #a4a4a4);
                 margin-bottom: 47px;
-            }
+                @media (max-width: 575.98px) { 
+                    margin-bottom: 20px;
+                };
+            };
 
             .client {
                 &-img {
@@ -52,7 +71,13 @@
         
     &-logos {
         @include font-style($mgope, 24px, $b);
-
+        @media (max-width: 575.98px) { 
+            margin-top: 70px;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            margin-top: 70px;
+        };
+        
         .clients-logo {
             background: url('../img/clients-logo.png'),no-repeat;
             background-size:cover;
@@ -60,22 +85,14 @@
             justify-content: center;
             align-items: center;
             padding: 45px 40px;
-     
-             &:nth-child(even) {
-                 margin-left: 15px;
-             };
-             &:nth-child(odd) {
-                 margin-right: 15px;
-             };
-             &:nth-child(3) {
-                 margin-top: 40px;
-             };
-             &:nth-child(4) {
-                 margin-top: 40px;
-             };
+            margin:25px 0px;
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                display: flex;
+                flex-direction: column;
+            };
      
             .text {
-                 margin-left: 10px;
+                margin-left: 10px;
             };
      
          };

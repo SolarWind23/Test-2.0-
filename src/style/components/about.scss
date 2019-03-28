@@ -1,25 +1,44 @@
 .about {
     padding-top:100px;
-  
-    .introduce {
-        text-align: center;
-        margin-bottom:102px;
-
-        &-title {
-            @include font-style($raleway-bo, 30px, $b);
-            margin-bottom: 50px;
+    @include introduce (102px, 50px, $b, $b);
+    @media (max-width: 575.98px) { 
+        padding-top:30px;
+        .introduce {
+            margin-bottom:15px;
+            &-title {
+                margin-bottom:25px;
+            };
         };
-
-        .colored {
-            color:$r;
+    };
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        padding-top:50px;
+        .introduce {
+            margin-bottom:40px;
+            &-title {
+                margin-bottom:25px;
+            };
         };
-
-        &-text {
-            @include font-style($lato-bo, 16px, $b);    
+    };
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        padding-top:70px;
+        .introduce {
+            margin-bottom:40px;
+            &-title {
+                margin-bottom:30px;
+            };
         };
     };
 
     .description {
+        @media (max-width: 575.98px) { 
+            margin-bottom: 20px;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            margin-bottom: 40px;
+        };
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            margin-bottom: 40px;
+        };
         
         
         &-text {
@@ -27,6 +46,12 @@
             line-height: 1.375;
             text-align: justify;
             margin-bottom: 41px;
+            @media (max-width: 575.98px) {             
+                text-align: center;
+            };
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                text-align: center;
+            };
         };
 
         .toggles {
@@ -61,8 +86,6 @@
                     }
                 }
             }
-            
-    
         };
 
     };
@@ -74,14 +97,31 @@
         align-items: center;
         justify-content: center;
 
+        @media (max-width: 575.98px) { 
+            margin-bottom: 20px;
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            margin-bottom: 40px;
+        };
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            margin-bottom: 40px;
+        };
+
         .left-hexagon {
             position: absolute;
             left: 0px;
+
+            @media (max-width: 575.98px) { 
+                width: 40%;
+            };
         };
 
         .right-hexagon {
             position: absolute;
             right: 0px;
+            @media (max-width: 575.98px) { 
+                width: 40%;
+            };
         };
 
         .center-hexagon-wrapper {
@@ -91,13 +131,22 @@
             z-index: 890;
 
 
-            @include hexagon (370px,  370px, $r, 0px);
-            
+            @include hexagon (370px,  370px, $w, 0px);
+            @media (max-width: 575.98px) { 
+                @include hexagon (215px,  215px, $w, 0px);
+            };
             .center-hexagon {
                 position: absolute;
                 top:5px;
                 left: 50%;
                 transform: translateX(-50%);
+               
+                @media (max-width: 575.98px) { 
+                    top: 7px;
+                    width: 110%;
+                    height: 95%;
+                    @include hexagon (255px,  255px, $r, 0px);
+                };
             };
 
         };
@@ -117,13 +166,30 @@
     .flat-design-wrapper {
         text-align: center;
         margin-bottom: 100px;
-        
+        @media (max-width: 575.98px) { 
+            margin-bottom: 20px;
+        };
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            margin-bottom: 50px;
+        };
+
         .item {
-         
+            @media (max-width: 575.98px) { 
+                margin-bottom: 20px;
+            };
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                margin-bottom: 30px;
+            };
+
             &__icon {
                 position: relative;
                 margin-bottom:35px;
-
+                @media (max-width: 575.98px) { 
+                    margin-bottom: 5px;
+                };
+                @media (min-width: 768px) and (max-width: 991.98px) { 
+                    margin-bottom: 20px;
+                };
                 @include hexagon(90px,90px,$w,auto);
                 
                 .hexagon {
@@ -158,15 +224,18 @@
             &__title {
                 @include font-style ($raleway-m,20px);
                 margin-bottom:28px;
+                @media (max-width: 575.98px) { 
+                    margin-bottom: 10px;
+                };
+                @media (min-width: 768px) and (max-width: 991.98px) { 
+                    margin-bottom: 25px;
+                };
             };
 
             &__text {
                 @include font-style ($lato-r,16px,#505050);
-                
-                    line-height: 1.375;
-                    text-align: center;
-    
-                  
+                line-height: 1.375;
+                text-align: center;                                  
             };
         };
     };

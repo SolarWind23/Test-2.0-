@@ -54,6 +54,7 @@
         bottom:  $y;
         margin-top: $marging;
         left:50%;
+        width: 100%;
         transform: translateX(-50%);
         z-index: 890;
     
@@ -96,7 +97,7 @@
     
         &-side{
             border:1px solid $bg-color;
-            width:248px;
+            width:17.7%;
         };
     };
 }

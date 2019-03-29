@@ -1,13 +1,21 @@
 .blog {
     @include introduce (100px, 50px, $b,$b);
-    padding: 110px 0px 100px 0px;
-
+    padding: 110px 0px 50px 0px;
+    @media (max-width:  1199.98px) { 
+        padding: 40px 0px 50px 0px;
+        @include media-introduce();
+    }; 
     .card {
         margin-bottom: 50px;
         border: none;
         
         &-img-wrapper {
             position: relative;
+            @media  (max-width: 767.98px) {
+                margin-bottom: 20px;
+            };
+
+
 
             .overlay {
                 position: absolute;
@@ -16,19 +24,30 @@
                 bottom: 50%;
                 transform: translateY(50%);
                 opacity: 0;
-            }
+            };
         };
 
         &-body {
             padding:0px 30px;
+            @media (max-width: 575.98px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         };
 
         &-title {
             @include font-style($raleway-sb,20px,#2e2e2e);
+            @media (max-width: 575.98px) {
+                text-align: center;
+            };
         };
 
         &-text {
             @include font-style($lato-r,16px,#505050); 
+            @media (max-width: 575.98px) {
+               text-align: center;
+            };
         };
 
         .info {
@@ -50,7 +69,7 @@
             &:focus{
                 border: none;
                 outline: none;
-                box-shadow: none;
+                box-shadow: none !important;
             }
         };
 

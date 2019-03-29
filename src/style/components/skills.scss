@@ -1,15 +1,25 @@
 .skills {
-    padding: 18px 0px;
+    padding: 18px 0px 100px 0px;
     @include introduce (100px, 50px, $b, $b);
     position: relative;
-
+    @media (max-width: 767.98px) { 
+        @include media-introduce();
+        padding: 18px 0px 20px 0px;
+    };
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .introduce {
+            margin-bottom: 50px;
+        };
+    };
     .infographic {
 
         &-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                margin:20px 0px;
+            };
         };
 
         &-title {

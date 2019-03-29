@@ -97,46 +97,46 @@
         align-items: center;
         justify-content: center;
 
-        @media (max-width: 575.98px) { 
-            margin-bottom: 20px;
-        };
-        @media (min-width: 576px) and (max-width: 767.98px) {
-            margin-bottom: 40px;
-        };
-        @media (min-width: 768px) and (max-width: 991.98px) { 
-            margin-bottom: 40px;
-        };
-
         .left-hexagon {
             position: absolute;
             left: 0px;
-            @media (min-width: 319px) and (max-width: 400.98px) {
-                width: 50%;
-                left: 5%;
-            };
-            @media (min-width: 400px) and (max-width:575.98px) {
+            @media (min-width:320px) and (max-width: 389.98px) { 
+                left: 0px;
                 width: 40%;
-                left: 15%;
             };
-           
-           
+            @media (min-width:390px) and (max-width: 469.98px) { 
+                left: 5%;
+                width: 45%;
+            };
+            @media (min-width: 470px) and (max-width: 575.98px) { 
+                left: 10%;
+                width: 45%;
+            };
+            
+            @media (min-width: 992px) and (max-width: 1199.98px) { 
+                height: 250px;
+            };
         };
 
         .right-hexagon {
             position: absolute;
             right: 0px;
-            @media (min-width: 319px) and (max-width: 400.98px) {
-                width: 50%;
-                right: 5%;
-            };
-            @media (min-width: 400px) and (max-width: 575.98px) {
+            @media (min-width:320px) and (max-width: 389.98px) { 
+                right: 0px;
                 width: 40%;
-                right: 15%;
             };
-            
-            @media (min-width: 576px) and (max-width: 767.98px) {
-                margin-bottom: 40px;
+            @media (min-width:390px) and (max-width: 469.98px)  { 
+                right: 5%;
+                width: 45%;
             };
+            @media (min-width: 470px) and (max-width: 575.98px) { 
+                right: 10%;
+                width: 45%;
+            };  
+            @media (min-width: 992px) and (max-width: 1199.98px) { 
+                height: 250px;
+            };
+
         };
 
         .center-hexagon-wrapper {
@@ -147,21 +147,34 @@
 
 
             @include hexagon (370px,  370px, $w, 0px);
+
             @media (max-width: 575.98px) { 
-                @include hexagon (215px,  215px, $w, 0px);
+                @include hexagon (200px,  200px, $w, 0px);
             };
+            @media (min-width: 470px) and (max-width: 575.98px) { 
+                @include hexagon (240px,  240px, $w, 0px);
+            };
+            @media (min-width: 992px) and (max-width: 1199.98px) { 
+                @include hexagon (300px,  300px, $w, 0px);
+            };
+
+
             .center-hexagon {
                 position: absolute;
                 top:5px;
                 left: 50%;
                 transform: translateX(-50%);
-               
                 @media (max-width: 575.98px) { 
-                    top: 7px;
-                    width: 110%;
-                    height: 95%;
-                    @include hexagon (255px,  255px, $r, 0px);
+                   top: 3%;
+                   width: initial;
+                   height: 95%;
                 };
+                @media (min-width: 992px) and (max-width: 1199.98px) { 
+                    top: 5px;
+                    width: initial;
+                    height: 290px;
+                };
+               
             };
 
         };
@@ -176,6 +189,12 @@
         position: relative;
 
         @include scroll-bar (20px, 20px, $b, absolute, 0,0px);
+        @media (max-width: 575.98px) { 
+            @include scroll-bar (20px, 20px, $b, absolute, 0,0px,50%);
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            @include scroll-bar (20px, 20px, $b, absolute, 0,0px,30%);
+        };
     };
 
     .flat-design-wrapper {

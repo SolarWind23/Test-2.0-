@@ -45,7 +45,7 @@
     }
 }
 
-@mixin scroll-bar ($width,  $height, $bg-color, $position, $marging:0px, $y:0% ) {
+@mixin scroll-bar ($width,  $height, $bg-color, $position, $marging:0px, $y:0%, $sideWidth:17.7%) {
     .scrollbar {
         display: flex;
         justify-content: center;
@@ -97,10 +97,10 @@
     
         &-side{
             border:1px solid $bg-color;
-            width:17.7%;
+            width:$sideWidth;
         };
     };
-}
+};
 
 @mixin introduce ($marginContainer:0px, $marginTitle:0px, $colorTitle:$w, $colorText:$w) {
     .introduce {

@@ -1,5 +1,6 @@
 .clients {
     background: url('../img/clients-bg.png');
+    background-size: cover;
     padding: 95px 0px;
     position: relative;
     @include introduce (100px, 50px);
@@ -8,10 +9,6 @@
         @include media-introduce();
     };
    
-    
-    @media (min-width: 992px) and (max-width: 1199.98px) { 
-        
-    };
     .row {
         margin: auto;
     };
@@ -100,5 +97,10 @@
 
 
     @include scroll-bar (20px, 20px, $r, absolute, 0,-10px);
-
+    @media (max-width: 575.98px) { 
+        @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,50%);
+    };
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,30%);
+    };
 };

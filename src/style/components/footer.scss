@@ -3,20 +3,33 @@
     background: #262626;
 
     .design-by {
-        display: flex;
-        justify-content: space-between;
+       
+
+        @media (max-width: 575.98px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        };
     };
 
     .logo {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         width: 54%;
+        
+        @media (max-width: 575.98px) {
+            margin-bottom: 20px;
+        };
     };
 
     .copy-right {
         color:#8e8e8e;
-        text-align: center;
-        display: flex;
+        text-align: right;
+        @media (max-width: 767.98px) {
+            margin-top: 20px;
+            text-align: center;
+        };
     };
 };

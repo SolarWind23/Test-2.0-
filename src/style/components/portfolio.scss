@@ -110,6 +110,12 @@
     };
     .scrollbar-wrapper {
         @include scroll-bar (20px, 20px, $r, absolute, 0px,-10px);
+        @media (max-width: 575.98px) { 
+            @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,50%);
+        };
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,30%);
+        };
     }
 };
 

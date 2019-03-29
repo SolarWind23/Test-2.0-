@@ -1,24 +1,59 @@
 .teamwork {
     padding: 90px 0px;
-    @include introduce (100px, 50px, $b, $b);
     position: relative;
+    @include introduce (100px, 50px, $b, $b);
+
+    @media (max-width: 575.98px) { 
+        padding: 20px 0px;
+        @include media-introduce();
+    };
+
+    @media (min-width: 576px) and (max-width: 767.98px) { 
+        padding: 40px 0px;
+        @include media-introduce();
+    };
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 50px 0px;
+        .introduce {
+            margin-bottom: 50px;
+        };
+    };
 
     .team {
         margin:auto;
-
+        @media (min-width: 360px) and (max-width: 440.98px) { 
+            padding: 0px 15%;     
+        };
+        @media (min-width: 441px) and (max-width: 575.98px) { 
+            padding: 0px 20%;     
+        };
+        
+        
         &-member {
             text-align: center;
             position: relative;
             border: 1px solid #e7e7e7;
             padding: 0px; 
             margin: 0px 15px;
+            @media (max-width: 575.98px) { 
+                margin: 20px 0px;
+            };
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                margin: 15px auto;
+            };
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                margin: 15px auto;
+            };
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                margin: 0px 15px;
+            }
             
             transition: all .7s;
 
             &-img {
                 position: relative;
                 overflow: hidden;
-
+               
 
                 .overlay {
                     position: absolute;
@@ -46,6 +81,18 @@
                         };
 
                         @include hexagon (46px, 46px, $w, 0px);
+                        @media (min-width:  500px) and (max-width: 575.98px) { 
+                            @include hexagon (66px, 66px, $w, 0px);
+                        };
+                        @media (min-width: 576px) and (max-width: 767.98px) {
+                            @include hexagon (36px, 36px, $w, 0px);
+                        };
+                        @media (min-width: 768px) and (max-width: 991.98px) {
+                            @include hexagon (56px, 56px, $w, 0px);
+                        };
+                        @media (min-width: 992px) and (max-width: 1199.98px) {
+                            @include hexagon (36px, 36px, $w, 0px);
+                        };
 
                         .logo {
                             color: $r;
@@ -54,12 +101,23 @@
                             bottom:50%;
                             right: 50%;
                             transform: translate(50%, 50%);
+
+                            @media (min-width:  500px) and (max-width: 575.98px) { 
+                                font-size: 18px  
+                            };
+                            @media (min-width: 576px) and (max-width: 767.98px) {
+                                font-size: 15px 
+                            };
+                            @media (min-width: 768px) and (max-width: 991.98px) {
+                                font-size: 20px 
+                            };
+                            @media (min-width: 992px) and (max-width: 1199.98px) {
+                                font-size: 15px 
+                            }
                         }
                     };
-
-                    
-
                 }
+
                 .member-picture{
                     width: 100%;
                 };
@@ -72,9 +130,8 @@
                 @include font-style($raleway-m, 20px, $r, uppercase)
             };
             &-activity {
-              
                 @include font-style($lato-r, 16px, #505050, capitalize)
-            }
+            };
 
             &:hover {
                 border:1px solid;
@@ -90,4 +147,10 @@
     };
 
     @include scroll-bar (20px, 20px, $b, relative, 100px);
+    @media (max-width: 575.98px) { 
+        @include scroll-bar (20px, 20px, $b, relative, 100px,0px,50%);
+    };
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        @include scroll-bar (20px, 20px, $b, relative, 100px,0px,30%);
+    };
 }

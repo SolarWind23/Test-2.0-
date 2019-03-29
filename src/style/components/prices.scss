@@ -1,9 +1,14 @@
 .prices {
     @include introduce (100px, 50px, $b,$b);
     padding: 110px 0px 100px 0px;
-    
+    @media (max-width: 992.98px) { 
+        @include media-introduce();
+        padding: 50px 0px 50px 0px
+    };
     .offer-item {
-        
+        @media (max-width: 992.98px) { 
+            margin-bottom: 50px;
+        };
         &:hover {
             .offer-price {
                 background: $r;
@@ -11,23 +16,22 @@
                 border:1px solid transparent;
                 .year {
                     color:$w;
-                }
+                };
             };
             .offer-order {
-                
+            
                 .order {
+                    
                     background: $r;
                     color:$w;
 
                     &:focus {
                         border: transparent;
                         outline: none;
-                    }
+                    };
                 };
             }
-           
         };
-
     };
 
     .card {
@@ -43,25 +47,39 @@
             &-price {
     
                 @include font-style($lato-bl,50px,#262626, uppercase);
+                @media (min-width: 992px) and (max-width: 1199.98px) {
+                    @include font-style($lato-bl,40px,#262626, uppercase);
+                };
+
                 .year{
                     @include font-style($lato-r,16px,#262626);
                 };
             };
             &-datasheet {
-               
                 @include font-style($lato-r,16px,#262626);
-            }
+                @media (min-width: 992px) and (max-width: 1199.98px) {
+                    @include font-style($lato-r,12px,#262626);
+                };
+            };
+            
             &-order {
                 background: $w;
                 .order {
                     border: none;
                     display: flex;
                     padding: 13px 50px;
-                    align-items: center;
+                    justify-content: center;
                     background: #262626;
                     @include font-style($raleway-r,16px,$w, uppercase);
-                }
-            }
+                    @media (min-width: 992px) and (max-width: 1199.98px) {
+                        @include font-style($raleway-r,15px,$w, uppercase);
+                        padding: 13px 30px;
+                    };
+                    &:focus {
+                        box-shadow: none;
+                    };
+                };
+            };
     
         };
         

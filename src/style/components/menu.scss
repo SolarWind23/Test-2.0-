@@ -1,6 +1,6 @@
 .header {
     top: 0px;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     opacity: 0.7;
     position: fixed;
@@ -31,7 +31,7 @@
         position: relative;
         &-logo {
             top:-3px;
-            z-index: 9999;  
+            z-index: 2;  
             position: absolute;
             &-img {
                 width: 100%;
@@ -59,10 +59,10 @@
                 padding: 15px;
             }; 
             @media (min-width: 992px) and (max-width: 1199px) { 
-                padding: 10px 0px 10px 280px;
+                padding: 0px 0px 0px 280px;
             }; 
             @media (min-width: 1200px) and (max-width: 1276px) { 
-                padding: 10px 0px 10px 280px;
+                padding: 0px 0px 0px 280px;
             }; 
 
             .toggle-bar {
@@ -116,7 +116,7 @@
                         background-color: transparent; 
                     };
                     &::after {
-                        bottom:-2px;
+                        bottom:0px;
                         height: 2px;
                         content: ' ';
                         width: 38.8%;

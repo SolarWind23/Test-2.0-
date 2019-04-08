@@ -37,7 +37,76 @@
         </header>
         <main class="main ">
             <section class="slider-wrapper">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        
+                    <div class="slider-container carousel-inner">
+                        <div class="slide carousel-item active">
+                            <img class="slide-img d-block w-100 h-100" src="./img/slideShow_bg1.png" alt="Первый слайд">
+                            <div class="slide-description carousel-caption">
+                                <h3 class="slide-title"> why <span class="decorate">creativia ?</span> </h3>
+                                <p class="slide-text"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. 
+                                    Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum 
+                                    lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. 
+                                    Nulla mi ipsum, consequat commodo condimentum vitae,
+                                </p>
+                                <div class="btn-wrapper">
+                                    <a href="#" class="btn btn-features">features</a>
+                                    <a href="#" class="btn btn-psd">Free PSD</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide carousel-item">
+                            <img class="slide-img d-block w-100 h-100" src="./img/slideShow_bg1.png" alt="Второй слайд">
+                            <div class="slide-description carousel-caption">
+                                <h3 class="slide-title"> why <span class="decorate">creativia ?</span> </h3>
+                                <p class="slide-text"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. 
+                                    Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum 
+                                    lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. 
+                                    Nulla mi ipsum, consequat commodo condimentum vitae,
+                                </p>
+                                <div class="btn-wrapper">
+                                    <a href="#" class="btn btn-features">features</a>
+                                    <a href="#" class="btn btn-psd">Free PSD</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide carousel-item">
+                            <img class="slide-img d-block w-100 h-100" src="./img/slideShow_bg1.png" alt="Третий слайд">
+                            <div class="slide-description carousel-caption">
+                                <h3 class="slide-title"> why <span class="decorate">creativia ?</span> </h3>
+                                <p class="slide-text"> 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. 
+                                    Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum 
+                                    lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. 
+                                    Nulla mi ipsum, consequat commodo condimentum vitae,
+                                </p>
+                                <div class="btn-wrapper">
+                                    <a href="#" class="btn btn-features">features</a>
+                                    <a href="#" class="btn btn-psd">Free PSD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="arrow-control-left carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="arrow-icon-left" aria-hidden="true">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="arrow-control-right carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="arrow-icon-right" aria-hidden="true">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            
+                <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="slider-content carousel-inner">
                         <div class="slider-item carousel-item active">
                             <img src="./img/slideShow_bg1.png" class="slider-img d-block w-100 h-100" alt="...">
@@ -97,10 +166,10 @@
                     <a class="carousel-control-next" href="#slide-show" role="button" data-slide="next">
                         <span class="carousel-controls fas fa-chevron-right" aria-hidden="true"> </span>
                     </a>
-                </div>
+                </div> -->
             </section>
-            <section class="about container-fluid">
-                <div class="introduce container">
+            <section class="about">
+                <div class="introduce">
                     <h5 class="introduce-title">
                         about 
                         <span class="colored"> creativia </span>
@@ -121,43 +190,43 @@
                             </p>
                             <div class="toggles">
                                 <div id="accordion">
-                                    <div class="card">
-                                        <div class="card-header" id="heading-one">
-                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-one" 
+                                    <div class="accordion-item card">
+                                        <div class="accordion-item-header card-header" id="heading-one">
+                                            <button class="accordion-item-btn btn btn-link" data-toggle="collapse" data-target="#collapse-one" 
                                             aria-expanded="false" aria-controls="collapseOne">
-                                                <i class="fas fa-plus-circle"></i> Who is creativia
+                                                <i class="symbol fas fa-plus-circle"></i> Who is creativia
                                             </button>
                                         </div>
                                         <div id="collapse-one" class="collapse" aria-labelledby="heading-one" data-parent="#accordion">
-                                            <div class="card-body">
+                                            <div class="toggler-text card-body">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. 
                                                 Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. 
                                                 Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
                                             </div>
                                         </div>
                                     </div>
-            
-                                    <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" 
+                                    <div class="accordion-item card">
+                                        <div class="accordion-item-header card-header" id="headingTwo">
+                                            <button class="accordion-item-btn btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" 
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                                <i class="fas fa-plus-circle"></i> Experiences
+                                                <i class="symbol fas fa-plus-circle"></i> Experiences
                                             </button>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                            <div class="card-body">
+                                            <div class="toggler-text card-body">
                                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-header" id="headingThree">      
-                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                <i class="fas fa-plus-circle"></i> Learn more
+                                    <div class="accordion-item card">
+                                        <div class="accordion-item-header card-header" id="headingThree">      
+                                            <button class="accordion-item-btn btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="symbol fas fa-plus-circle"></i>
+                                                Learn more
                                             </button>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body">
+                                        <div class="toggler-text card-body">
                                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                         </div>
                                         </div>
@@ -177,7 +246,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="scrollbar-wrapper">
                     <div class="scrollbar">
                         <span class="scrollbar-side"></span>
@@ -187,10 +255,9 @@
                         <span class="scrollbar-side"></span>
                     </div>
                 </div> 
-                
                 <div class="flat-design-wrapper container">
                     <div class="info row">
-                        <div class="item col col-sm-6 col-md-3 col-lg-3">
+                        <a href ="#" class="item col-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="item--icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
@@ -202,24 +269,21 @@
                                 Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
                                 eget mauris fusce sit amet  
                             </p>
-                        </div>
-            
-                        <div class="item col col-sm-6 col-md-3 col-lg-3">
+                        </a>
+                        <a href="#" class="item col-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="item--icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
                                      <i class="simbol fas fa-check-circle"></i>
                                 </div>
-                               
                             </div>
                             <h5 class="item--title">RETINA READY</h5>
                             <p class="item--text">
                                 Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
                                 eget mauris fusce sit amet  
                             </p>
-                        </div>
-            
-                        <div class="item col col-sm-6 col-md-3 col-lg-3">
+                        </a>
+                        <a href="#" class="item col-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="item--icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
@@ -231,9 +295,8 @@
                                 Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
                                 eget mauris fusce sit amet  
                             </p>
-                        </div>
-            
-                        <div class="item col col-sm-6 col-md-3 col-lg-3">
+                        </a>
+                        <a href="#" class="item col-12 col-sm-6 col-md-3 col-lg-3">
                             <div class="item--icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
@@ -245,33 +308,33 @@
                                 Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
                                 eget mauris fusce sit amet  
                             </p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
             <div class="portfolio">
                 <div class="portfolio-title">portfolio</div>
                 <div class="tab-panel">                    
-                    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                    <ul class="tab-panel-nav nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="all" data-toggle="tab" href="#all-tab" role="tab" aria-controls="all-tab" aria-selected="true">
+                            <a class="tab-panel-nav-link nav-link active" id="all" data-toggle="tab" href="#all-tab" role="tab" aria-controls="all-tab" aria-selected="true">
                                 All 
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="illustration" data-toggle="tab" href="#illustration-tab" 
+                            <a class="tab-panel-nav-link nav-link" id="illustration" data-toggle="tab" href="#illustration-tab" 
                             role="tab"  aria-selected="false">
                                 Illustration
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="digital-art" data-toggle="tab" href="#digital-art-tab" 
+                            <a class="tab-panel-nav-link nav-link" id="digital-art" data-toggle="tab" href="#digital-art-tab" 
                             role="tab" aria-controls="digital-art-tab" aria-selected="false">
                                 Digital Art 
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="web-design" data-toggle="tab" href="#web-design-tab" 
+                            <a class="tab-panel-nav-link nav-link" id="web-design" data-toggle="tab" href="#web-design-tab" 
                             role="tab" aria-controls="web-design-tab" aria-selected="false">
                                 Web design 
                             </a>
@@ -279,250 +342,244 @@
                     </ul>
                 </div>
             
-                <div class="tab-content" id="myTabContent" >
-                    <div class="tab-pane fade show active row no-gutters" id="all-tab" role="tabpanel" aria-labelledby="all">
-                       
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img1.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                <div class="content tab-content" id="myTabContent" >
+                    <div class="content-panel tab-pane fade show active row no-gutters" id="all-tab" role="tabpanel" aria-labelledby="all">  
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img1.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img2.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12  col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img2.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img3.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img3.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5 col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img4.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img4.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>            
-                        <div class="tab-pane-item col-5 col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img5.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img5.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>            
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img6.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img6.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5 col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img7.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img7.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img8.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img8.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div> 
                     </div>
             
-                    <div class="tab-pane fade row no-gutters" id="illustration-tab" role="tabpanel">
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img1.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                    <div class="content-panel tab-pane fade row no-gutters" id="illustration-tab" role="tabpanel">
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img1.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img2.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12  col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img2.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img3.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img3.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img4.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img4.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img5.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img6.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>            
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img7.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img5.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
+                        </div>            
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img6.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img8.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img7.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                    </div>
-            
-                    <div class="tab-pane fade row no-gutters" id="digital-art-tab" role="tabpanel" aria-labelledby="digital-art">
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-            
-                            <img src="./img/tab-img1.png" alt="" class="tab-img">
-            
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img8.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
-            
-                        </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img2.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img3.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img4.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img5.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img6.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img7.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img8.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div> 
                     </div>
             
-                    <div class="tab-pane fade row no-gutters" id="web-design-tab" role="tabpanel" aria-labelledby="web-design">
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-            
-                            <img src="./img/tab-img1.png" alt="" class="tab-img">
-            
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                    <div class="content-panel tab-pane fade row no-gutters" id="digital-art-tab" role="tabpanel" aria-labelledby="digital-art">
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img1.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
-            
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img2.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12  col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img2.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img3.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img3.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img4.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img4.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
+                        </div>            
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img5.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>            
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img6.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img5.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img7.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img6.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img8.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
                                 <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-5  col-sm-5 col-md-5 col-lg-2">
-                            <img src="./img/tab-img7.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
-                        </div>
-                        <div class="tab-pane-item col-7 col-sm-7 col-md-7 col-lg-4">
-                            <img src="./img/tab-img8.png" alt="" class="tab-img">
-                            <button class="design-wrapper">
-                                <i class="fas fa-plus"></i>
-                                <p class = "text"> design name</p>
-                            </button>
+                            </a>
                         </div> 
                     </div>
+            
+                    <div class="content-panel tab-pane fade row no-gutters" id="web-design-tab" role="tabpanel" aria-labelledby="web-design">
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img1.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>
+                        <div class="content-panel-item tab-pane-item col-12  col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img2.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img3.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img4.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>            
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img5.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>            
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img6.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-5 col-md-5 col-lg-2">
+                            <img src="./img/tab-img7.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>
+                        <div class="content-panel-item tab-pane-item col-12 col-sm-7 col-md-7 col-lg-4">
+                            <img src="./img/tab-img8.png" alt="" class="content-img">
+                            <a href="#" class="design-wrapper">
+                                <i class="symbol fas fa-plus"></i>
+                                <p class = "text"> design name</p>
+                            </a>
+                        </div>
+                    </div> 
                 </div>
+            
                 <div class="scrollbar-wrapper">
                     <div class="scrollbar">
                         <span class="scrollbar-side"></span>
@@ -534,23 +591,21 @@
                 </div> 
             </div>
             <section class="product container">
-                    <div class="introduce">
-                        <h5 class="introduce-title">
-                            our 
-                            <span class="colored"> product features </span>
-                        </h5>
-                        <p class="introduce-text">
-                            Lorem ipsum dolor sit amet, consectetur 
-                            <span class="colored">adipiscing elit.</span>
-                            Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
-                        </p>
-                    </div>
-            
+                <div class="introduce">
+                    <h5 class="introduce-title">
+                        our 
+                        <span class="colored"> product features </span>
+                    </h5>
+                    <p class="introduce-text">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        <span class="colored">adipiscing elit.</span>
+                        Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
+                    </p>
+                </div>
             
                 <div class="row m-0">
-            
                     <div class="options order-1 col-12 order-md-1 col-sm-12 col-md-4">
-                        <div class="options-item-left">
+                        <a href="#" class="options-item-left">
                             <span class="text">
                                 Unlimited Color Options
                             </span>
@@ -558,82 +613,75 @@
                             <div class="options-item-icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
-                                    <i class="fas fa-check"></i>
+                                    <i class="symbol fas fa-check"></i>
                                 </div>
                             </div>
-                        </div>
-            
-                        <div class="options-item-left">
+                        </a>
+                        <a href="#" class="options-item-left">
                             <span class="text">
                                 Outstanding Support
                             </span>
                             <div class="options-item-icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
-                                    <i class="fas fa-check"></i>
+                                    <i class="symbol fas fa-check"></i>
                                 </div>
                             </div>
-                        </div>
-            
-                        <div class="options-item-left">
+                        </a>
+                        <a href="#" class="options-item-left">
                             <span class="text">
                                 Retina Ready
                             </span>
                             <div class="options-item-icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
-                                    <i class="fas fa-check"></i>
+                                    <i class="symbol fas fa-check"></i>
                                 </div>
                             </div>
-                        </div>
-                       
+                        </a>
                     </div>
             
                     <div class="product-image order-2 order-md-2 col-12 col-md-4">
                         <img class = "product-icon"  src="./img/product-features.png" alt="">
-            
-                        <button class="byTheme" role="button" type="submit" value="Submit">
+                        <a href="#" class="byTheme" role="button" type="submit" value="Submit">
                             free psd
-                        </button>
+                        </a>
                     </div>
             
                     <div class="options order-3 order-md-3 col-12 col-sm-12 col-md-4">
-            
-                        <div class="options-item-right">
+                        <a href="#" class="options-item-right">
                             <div class="options-item-icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
-                                    <i class="fas fa-check"></i>
+                                    <i class="symbol fas fa-check"></i>
                                 </div>
                             </div>
                             <span class="text">
                                 Unlimited Color Options
                             </span>
-                        </div>
-            
-                        <div class="options-item-right">
+                        </a>
+                        <a href="#" class="options-item-right">
                             <div class="options-item-icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
-                                    <i class="fas fa-check"></i>
+                                    <i class="symbol fas fa-check"></i>
                                 </div>
                             </div>
                             <span class="text">
                                 Outstanding Support
                             </span>
-                        </div>
-            
-                        <div class="options-item-right">
+                        </a>
+                        <a href="#" class="options-item-right">
                             <div class="options-item-icon">
                                 <div  class="hexagon-wrapper">
                                     <div class="hexagon"></div>
-                                    <i class="fas fa-check"></i>
+                                    <i class="symbol fas fa-check"></i>
                                 </div>
                             </div>
                             <span class="text">
                                 Retina Ready
                             </span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 .about {
-    padding-top:100px;
+    padding:100px 15px 0px 15px;
     @include introduce (102px, 50px, $b, $b);
     @media (max-width: 575px) { 
         padding-top:30px;
@@ -30,6 +30,7 @@
     };
 
     .description {
+        @include font-style($lato-r,16px,$bl-light);
         @media (max-width: 575px) { 
             margin-bottom: 20px;
         };
@@ -52,17 +53,18 @@
         };
 
         .toggles {
-            .card {
+            .accordion-item {
                 margin-bottom: 10px;
-            }
-            .card-header {
-                padding: 0px;
-                &:hover{
-                    .btn-link {
-                        color:$r;
-                    }
-                }
-                .btn-link {
+
+                &-header {
+                    padding: 0px;
+                    &:hover{
+                        .accordion-item-btn {
+                            color:$r;
+                        };
+                    };
+                };
+                &-btn {
                     @include font-style($raleway-m,20px,$bl-darck);
                     text-decoration: none;
                     padding: 0px;
@@ -72,26 +74,29 @@
                         color:$r;
                     };
 
-                    .fa-plus-circle {
+                    .symbol {
                         padding: 12px 20px;
                         border-right: 1px solid $gray-super-light;
                         margin-right: 30px;
                     };
+                };
+                .toggler-text {
+                    @include font-style($lato-r,14px,$bl-light);
                 };
             };
         };
     };
 
     .hexagons-img {
-       
-        position: relative;
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: center;
 
         .left-hexagon {
-            position: absolute;
             left: 0px;
+            position: absolute;
+
             @media (min-width:320px) and (max-width: 389px) { 
                 left: 0px;
                 width: 40%;
@@ -135,7 +140,7 @@
             display: flex;
             justify-content: center;
             position: relative;
-            z-index: 890;
+            z-index: 1;
 
 
             @include hexagon (370px,  370px, $w, 0px);
@@ -195,6 +200,11 @@
         };
 
         .item {
+            color: $b;
+            display: flex;
+            cursor: pointer;
+            text-decoration: none;
+            flex-direction: column;
             @media (max-width: 575px) { 
                 margin-bottom: 20px;
             };
@@ -224,11 +234,10 @@
                     &::before {
                         border-top:1px solid $b;
                         border-bottom:1px solid $b;
-                    }
+                    };
                 };
 
                 .simbol {
-                    
                     font-size: 30px;
                     position: absolute;
                     top: 50%;
@@ -243,8 +252,8 @@
             };
 
             &--title {
-                @include font-style ($raleway-m,20px);
                 margin-bottom:28px;
+                @include font-style ($raleway-m,20px);
                 @media (max-width: 575px) { 
                     margin-bottom: 10px;
                 };
@@ -254,9 +263,9 @@
             };
 
             &--text {
-                @include font-style ($lato-r,16px,$bl-light);
                 line-height: 1.375;
-                text-align: center;                                  
+                text-align: center; 
+                @include font-style ($lato-r,16px,$bl-light);
             };
         };
     };

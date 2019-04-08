@@ -1,41 +1,39 @@
 .clients {
     background: url('../img/clients-bg.png');
     background-size: cover;
-    padding: 95px 0px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     position: relative;
+
+    
     @include introduce (100px, 50px);
-    @media (max-width: 575.98px) { 
-        padding: 20px 0px;
+    @media (max-width: 575px) { 
+        padding-top: 20px;
+        padding-bottom: 20px;
         @include media-introduce();
     };
-   
-    .row {
-        margin: auto;
-    };
-
     .client-say-carousel {
         .carousel {
-            @media (max-width: 575.98px) { 
+            @media (max-width: 575px) { 
                 #carouselCaptions+.carousel-inner {
                     height: 100%;
-                }
+                };
             };
             text-align: center;
             &-title {
                 @include font-style($raleway-m, 20px,$w, uppercase);
                 margin-bottom: 50px;
-                @media (max-width: 575.98px) { 
+                @media (max-width: 575px) { 
                     margin-bottom: 30px;
                 };
             };
             &-text {
-                @include font-style($lato-r, 16px, #a4a4a4);
+                @include font-style($lato-r, 16px, $gray);
                 margin-bottom: 47px;
-                @media (max-width: 575.98px) { 
+                @media (max-width: 575px) { 
                     margin-bottom: 20px;
                 };
             };
-
             .client {
                 &-img {
                     margin-bottom: 17px;
@@ -43,38 +41,34 @@
                 &-name {
                     @include font-style($raleway-bo, 16px, $r, uppercase);
                     margin-bottom: 27px;
-                }
+                };
             };
-
             &-indicators {
                 margin-bottom: 0px;
-
-
                 .indicator {
                     border: 1px solid transparent;
                     background: $w;
                     width: 8px;
                     height: 8px;
-    
+
                     &.active {
                         background: $r;
-                    }
-                }
-            }
-            
+                    };
+                };
+            }; 
         };
-        
     };
-        
     &-logos {
         @include font-style($mgope, 24px, $b);
-        @media (max-width: 575.98px) { 
+        @media (max-width: 575px) { 
             margin-top: 70px;
         };
-        @media (min-width: 576px) and (max-width: 767.98px) {
+        @media (min-width: 576px) and (max-width: 767px) {
             margin-top: 70px;
         };
-        
+        @media (min-width: 768px) and (max-width: 991px) {
+            margin-top: 40px;
+        };
         .clients-logo {
             background: url('../img/clients-logo.png'),no-repeat;
             background-size:cover;
@@ -83,24 +77,22 @@
             align-items: center;
             padding: 45px 40px;
             margin:25px 0px;
-            @media (min-width: 768px) and (max-width: 991.98px) { 
+            @media (min-width: 768px) and (max-width: 991px) { 
                 display: flex;
                 flex-direction: column;
             };
-     
             .text {
                 margin-left: 10px;
             };
-     
-         };
+        };
     };
 
 
     @include scroll-bar (20px, 20px, $r, absolute, 0,-10px);
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575px) { 
         @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,50%);
     };
-    @media (min-width: 576px) and (max-width: 767.98px) {
+    @media (min-width: 576px) and (max-width: 767px) {
         @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,30%);
     };
 };

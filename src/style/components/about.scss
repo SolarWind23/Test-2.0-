@@ -1,7 +1,7 @@
 .about {
     padding-top:100px;
     @include introduce (102px, 50px, $b, $b);
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575px) { 
         padding-top:30px;
         .introduce {
             margin-bottom:15px;
@@ -10,7 +10,7 @@
             };
         };
     };
-    @media (min-width: 576px) and (max-width: 767.98px) {
+    @media (min-width: 576px) and (max-width: 767px) {
         padding-top:50px;
         .introduce {
             margin-bottom:40px;
@@ -19,7 +19,7 @@
             };
         };
     };
-    @media (min-width: 768px) and (max-width: 991.98px) { 
+    @media (min-width: 768px) and (max-width: 991px) { 
         padding-top:70px;
         .introduce {
             margin-bottom:40px;
@@ -30,26 +30,23 @@
     };
 
     .description {
-        @media (max-width: 575.98px) { 
+        @media (max-width: 575px) { 
             margin-bottom: 20px;
         };
-        @media (min-width: 576px) and (max-width: 767.98px) {
+        @media (min-width: 576px) and (max-width: 767px) {
             margin-bottom: 40px;
         };
-        @media (min-width: 768px) and (max-width: 991.98px) { 
+        @media (min-width: 768px) and (max-width: 991px) { 
             margin-bottom: 40px;
         };
         
         
         &-text {
-            @include font-style($lato-r, 16px, #505050); 
+            @include font-style($lato-r, 16px, $bl-light); 
             line-height: 1.375;
             text-align: justify;
             margin-bottom: 41px;
-            @media (max-width: 575.98px) {             
-                text-align: center;
-            };
-            @media (min-width: 576px) and (max-width: 767.98px) {
+            @media (max-width: 767px) {
                 text-align: center;
             };
         };
@@ -60,34 +57,29 @@
             }
             .card-header {
                 padding: 0px;
-
-
-
                 &:hover{
                     .btn-link {
                         color:$r;
                     }
                 }
-
                 .btn-link {
-                    @include font-style($raleway-m,20px,#262626);
+                    @include font-style($raleway-m,20px,$bl-darck);
                     text-decoration: none;
                     padding: 0px;
-
-
+                    width: 100%;
+                    text-align: left;
                     &:focus {
                         color:$r;
                     };
 
                     .fa-plus-circle {
                         padding: 12px 20px;
-                        border-right: 1px solid #e7e7e7;
+                        border-right: 1px solid $gray-super-light;
                         margin-right: 30px;
-                    }
-                }
-            }
+                    };
+                };
+            };
         };
-
     };
 
     .hexagons-img {
@@ -100,20 +92,20 @@
         .left-hexagon {
             position: absolute;
             left: 0px;
-            @media (min-width:320px) and (max-width: 389.98px) { 
+            @media (min-width:320px) and (max-width: 389px) { 
                 left: 0px;
                 width: 40%;
             };
-            @media (min-width:390px) and (max-width: 469.98px) { 
+            @media (min-width:390px) and (max-width: 469px) { 
                 left: 5%;
                 width: 45%;
             };
-            @media (min-width: 470px) and (max-width: 575.98px) { 
+            @media (min-width: 470px) and (max-width: 575px) { 
                 left: 10%;
                 width: 45%;
             };
             
-            @media (min-width: 992px) and (max-width: 1199.98px) { 
+            @media (min-width: 992px) and (max-width: 1199px) { 
                 height: 250px;
             };
         };
@@ -121,19 +113,19 @@
         .right-hexagon {
             position: absolute;
             right: 0px;
-            @media (min-width:320px) and (max-width: 389.98px) { 
+            @media (min-width:320px) and (max-width: 389px) { 
                 right: 0px;
                 width: 40%;
             };
-            @media (min-width:390px) and (max-width: 469.98px)  { 
+            @media (min-width:390px) and (max-width: 469px)  { 
                 right: 5%;
                 width: 45%;
             };
-            @media (min-width: 470px) and (max-width: 575.98px) { 
+            @media (min-width: 470px) and (max-width: 575px) { 
                 right: 10%;
                 width: 45%;
             };  
-            @media (min-width: 992px) and (max-width: 1199.98px) { 
+            @media (min-width: 992px) and (max-width: 1199px) { 
                 height: 250px;
             };
 
@@ -148,37 +140,33 @@
 
             @include hexagon (370px,  370px, $w, 0px);
 
-            @media (max-width: 575.98px) { 
+            @media (max-width: 575px) { 
                 @include hexagon (200px,  200px, $w, 0px);
             };
-            @media (min-width: 470px) and (max-width: 575.98px) { 
+            @media (min-width: 470px) and (max-width: 575px) { 
                 @include hexagon (240px,  240px, $w, 0px);
             };
-            @media (min-width: 992px) and (max-width: 1199.98px) { 
+            @media (min-width: 992px) and (max-width: 1199px) { 
                 @include hexagon (300px,  300px, $w, 0px);
             };
-
 
             .center-hexagon {
                 position: absolute;
                 top:5px;
                 left: 50%;
                 transform: translateX(-50%);
-                @media (max-width: 575.98px) { 
+                @media (max-width: 575px) { 
                    top: 3%;
                    width: initial;
                    height: 95%;
                 };
-                @media (min-width: 992px) and (max-width: 1199.98px) { 
+                @media (min-width: 992px) and (max-width: 1199px) { 
                     top: 5px;
                     width: initial;
                     height: 290px;
                 };
-               
             };
-
         };
-    
     };
 
     .scrollbar-wrapper {
@@ -187,12 +175,11 @@
         justify-content: center;
         align-items: center;
         position: relative;
-
         @include scroll-bar (20px, 20px, $b, absolute, 0,0px);
-        @media (max-width: 575.98px) { 
+        @media (max-width: 575px) { 
             @include scroll-bar (20px, 20px, $b, absolute, 0,0px,50%);
         };
-        @media (min-width: 576px) and (max-width: 767.98px) {
+        @media (min-width: 576px) and (max-width: 767px) {
             @include scroll-bar (20px, 20px, $b, absolute, 0,0px,30%);
         };
     };
@@ -200,43 +187,43 @@
     .flat-design-wrapper {
         text-align: center;
         margin-bottom: 100px;
-        @media (max-width: 575.98px) { 
+        @media (max-width: 575px) { 
             margin-bottom: 20px;
         };
-        @media (min-width: 768px) and (max-width: 991.98px) { 
+        @media (min-width: 768px) and (max-width: 991px) { 
             margin-bottom: 50px;
         };
 
         .item {
-            @media (max-width: 575.98px) { 
+            @media (max-width: 575px) { 
                 margin-bottom: 20px;
             };
-            @media (min-width: 768px) and (max-width: 991.98px) { 
+            @media (min-width: 768px) and (max-width: 991px) { 
                 margin-bottom: 30px;
             };
 
-            &__icon {
+            &--icon {
                 position: relative;
                 margin-bottom:35px;
-                @media (max-width: 575.98px) { 
+                @media (max-width: 575px) { 
                     margin-bottom: 5px;
                 };
-                @media (min-width: 768px) and (max-width: 991.98px) { 
+                @media (min-width: 768px) and (max-width: 991px) { 
                     margin-bottom: 20px;
                 };
                 @include hexagon(90px,90px,$w,auto);
                 
                 .hexagon {
 
-                    border:1px solid black;
+                    border:1px solid $b;
 
                     &::after {
-                        border-top:1px solid black;
-                        border-bottom:1px solid black;
+                        border-top:1px solid $b;
+                        border-bottom:1px solid $b;
                     };
                     &::before {
-                        border-top:1px solid black;
-                        border-bottom:1px solid black;
+                        border-top:1px solid $b;
+                        border-bottom:1px solid $b;
                     }
                 };
 
@@ -255,19 +242,19 @@
                 };
             };
 
-            &__title {
+            &--title {
                 @include font-style ($raleway-m,20px);
                 margin-bottom:28px;
-                @media (max-width: 575.98px) { 
+                @media (max-width: 575px) { 
                     margin-bottom: 10px;
                 };
-                @media (min-width: 768px) and (max-width: 991.98px) { 
+                @media (min-width: 768px) and (max-width: 991px) { 
                     margin-bottom: 25px;
                 };
             };
 
-            &__text {
-                @include font-style ($lato-r,16px,#505050);
+            &--text {
+                @include font-style ($lato-r,16px,$bl-light);
                 line-height: 1.375;
                 text-align: center;                                  
             };

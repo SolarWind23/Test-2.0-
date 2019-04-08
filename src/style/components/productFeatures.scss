@@ -1,19 +1,19 @@
 .product {
     padding: 100px 0px 100px 0px;
 
-    @media (max-width:  1199.98px) { 
+    @media (max-width:  1199px) { 
         padding: 50px 0px 50px 0px;
     };
 
-    @media (min-width: 1200px) and (max-width: 1276.98px) { 
+    @media (min-width: 1200px) and (max-width: 1276px) { 
         padding: 100px 0px 100px 0px;
     }; 
     
 
-    @include introduce (175px, 50px, $b, #505050);
+    @include introduce (175px, 50px, $b, $bl-light);
     @include media-introduce();
     .options {
-        @media (min-width: 992px) and (max-width: 1199.98px) { 
+        @media (min-width: 992px) and (max-width: 1199px) { 
             align-items: center;
             display: flex; 
             flex-direction: column;
@@ -26,7 +26,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            border: 1px solid #e7e7e7;
+            border: 1px solid $gray-super-light;
             margin-bottom: 23px;
             padding: 10px 20px;
             text-align: right;
@@ -35,7 +35,7 @@
                 position: relative;
                 display: flex;
                 margin-left: 10px;
-                @include hexagon(32px,32px,#e7e7e7,relative);
+                @include hexagon(32px,32px,$gray-super-light,relative);
                 .fa-check {
                     position: absolute;
                     top: 50%;
@@ -47,63 +47,60 @@
             .text {
                 flex-grow: 1;
             };
-            @media (max-width: 575.98px) { 
+            @media (max-width: 575px) { 
                 justify-content: space-between;
                 text-align: center;
-                margin: 5px 20px;
+                margin: 20px 0px;
             };
-            @media (min-width: 576px) and (max-width: 767.98px) {
+            @media (min-width: 576px) and (max-width: 767px) {
                 justify-content: space-between;
                 text-align: center;
-                margin: 10px;
+                margin: 10px 0px;
                 font-size: 18px;
             };
-            @media (min-width: 768px) and (max-width: 991.98px) { 
+            @media (min-width: 768px) and (max-width: 991px) { 
                 justify-content: space-between;
                 text-align: center;
-                margin: 10px;
+                margin: 10px 0px;
                 font-size: 14px;
             };
-            @media (min-width: 992px) and (max-width: 1199.98px) { 
+            @media (min-width: 992px) and (max-width: 1199px) { 
                 justify-content: space-between;
                 text-align: center;
-                margin: 10px;
+                margin: 10px 0px;
                 font-size: 20px; 
             };
             &:hover {
                 background: $r;
                 color: $w;
-
-
-                .fa-check {
-                    
+                .fa-check {  
                     color: $r;
-                }
-            }
+                };
+            };
 
         };
         &-item-right {
             @extend .options-item-left;
             justify-content: flex-start;
             text-align: left;
-            @media (max-width: 575.98px) { 
+            @media (max-width: 575px) { 
                 justify-content: space-between;
                 text-align: center;
             };
-            @media (min-width: 576px) and (max-width: 767.98px) {
+            @media (min-width: 576px) and (max-width: 767px) {
                 justify-content: space-between;
                 text-align: center;
-                margin: 10px;
+                margin: 10px 0px;
             };
-            @media (min-width: 768px) and (max-width: 991.98px) { 
+            @media (min-width: 768px) and (max-width: 991px) { 
                 justify-content: space-between;
                 text-align: center;
-                margin: 10px;
+                margin: 10px 0px;
             };
-            @media (min-width: 992px) and (max-width: 1199.98px) { 
+            @media (min-width: 992px) and (max-width: 1199px) { 
                 justify-content: space-between;
                 text-align: center;
-                margin: 10px;
+                margin: 10px 0px;
             };
 
             .options-item-icon {
@@ -112,10 +109,9 @@
 
             .text {
                 flex-grow: 1;
-            }
-            
-        }
-    }
+            };
+        };
+    };
 
     &-image {
         display: flex;
@@ -125,11 +121,11 @@
         @media (max-width: 767.98px) { 
             margin: 30px 0px;
         };
-        @media (min-width: 768px) and (max-width: 991.98px) { 
+        @media (min-width: 768px) and (max-width: 991px) { 
            margin: 0px;
            position: relative;
         };
-        @media (min-width: 992px) and (max-width: 1199.98px) { 
+        @media (min-width: 992px) and (max-width: 1199px) { 
             margin: 0px;
             position: relative;
         };
@@ -141,7 +137,7 @@
        position: relative;
        top: -15%;
 
-        @media (max-width: 1199.98px) { 
+        @media (max-width: 1199px) { 
             position: relative;
             top: 0px;
             width: 100%;
@@ -152,7 +148,7 @@
     .byTheme {
         position: absolute;
         bottom: 25%;
-        background: #393939;
+        background: $bl-bg-light;
         border: none;
         @include font-style($raleway-m, 20px, $w, uppercase);
         padding: 18px 40px;
@@ -160,16 +156,16 @@
            bottom: 10%;
            padding: 5px 30px;
         };
-        @media (min-width: 576px) and (max-width: 767.98px) {
+        @media (min-width: 576px) and (max-width: 767px) {
             bottom: 10%;
             padding: 25px 60px;
         };
-        @media (min-width: 768px) and (max-width: 991.98px) { 
+        @media (min-width: 768px) and (max-width: 991px) { 
             bottom: 10%;
             padding: 5px 20px;
             font-size: 15px
         };
-        @media (min-width: 992px) and (max-width: 1199.98px) { 
+        @media (min-width: 992px) and (max-width: 1199px) { 
             bottom: 10%;
             padding: 10px 30px;
             font-size: 20px 
@@ -177,6 +173,6 @@
         &:focus {
             border: none;
             outline: none;
-        }
+        };
     };
 };

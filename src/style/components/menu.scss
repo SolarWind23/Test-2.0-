@@ -1,161 +1,139 @@
-.menu {
-
-    padding: 0px 107px 0px 115px;
-    background-color: #000000!important;
-    border-top: 3px solid #7f7f7f;
-    position: fixed;
-    width: 100%;
+.header {
     top: 0px;
-    z-index: 900;
+    z-index: 1;
+    width: 100%;
     opacity: 0.7;
+    position: fixed;
+    background-color: $b;
+    padding: 0px 107px 0px 115px;
+    border-top: 3px solid $gray-light;
     &:hover {
         opacity:1;
     };
-
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575px) { 
         padding: 0px;
-        border-top: 3px solid #7f7f7f;
     };
-    @media (min-width: 576px) and (max-width: 767.98px) {
+    @media (min-width: 576px) and (max-width: 767px) {
       padding: 0px 30px;
     };
-    @media (min-width: 768px) and (max-width: 991.98px) { 
+    @media (min-width: 768px) and (max-width: 991px) { 
         padding: 0px 50px;
     };
-    @media (min-width: 992px) and (max-width: 1199.98px) { 
+    @media (min-width: 992px) and (max-width: 1199px) { 
         padding: 0px 40px;
     };
-    @media (min-width: 1200px) and (max-width: 1276.98px) { 
+    @media (min-width: 1200px) and (max-width: 1276px) { 
         padding: 0px 70px;
     }; 
     
     .navigation {
-        position: relative;
         height: 100%;
-
+        position: relative;
         &-logo {
-            position: absolute;
             top:-3px;
             z-index: 9999;  
-            
+            position: absolute;
             &-img {
                 width: 100%;
             };
-
-            @media (max-width: 575.98px) { 
+            @media (max-width: 575px) { 
                 width: 47%;
                 margin-left: 10px;
             };
-            @media (min-width: 576px) and (max-width: 767.98px) {
+            @media (min-width: 576px) and (max-width: 767px) {
                 width: 45%;
             };   
         };
 
-        .navbar {
-            padding:20px 0px 20px 342px;
-            background-color: transparent!important;
+        .navigation-bar {
             height: 100%;
-
-            @media (max-width: 575.98px) { 
+            padding:0px 0px 0px 342px;
+            background-color: transparent;
+            @media (max-width: 575px) { 
                 padding: 5px;
             };
-            @media (min-width: 576px) and (max-width: 767.98px) {
+            @media (min-width: 576px) and (max-width: 767px) {
                 padding: 15px;
             }; 
-            @media (min-width: 768px) and (max-width: 991.98px) { 
+            @media (min-width: 768px) and (max-width: 991px) { 
                 padding: 15px;
             }; 
-            @media (min-width: 992px) and (max-width: 1199.98px) { 
+            @media (min-width: 992px) and (max-width: 1199px) { 
                 padding: 10px 0px 10px 280px;
             }; 
-            @media (min-width: 1200px) and (max-width: 1276.98px) { 
+            @media (min-width: 1200px) and (max-width: 1276px) { 
                 padding: 10px 0px 10px 280px;
             }; 
 
-            &-collapse {
-                height: 100%;
-
-                @media (max-width: 575.98px) { 
+            .toggle-bar {
+                transition: height .5s;
+                @media (max-width: 575px) { 
                     padding-top: 20px;
                 };
-                @media (min-width: 576px) and (max-width: 767.98px) {
+                @media (min-width: 576px) and (max-width: 767px) {
                     padding: 20px;
                 };
-                @media (min-width: 768px) and (max-width: 991.98px) { 
+                @media (min-width: 768px) and (max-width: 991px) { 
                     padding: 15px;
                 }; 
-    
             };
-        
-            &-nav {
-                flex-grow: 0.9;
+           
+            .navigation-links {
                 height: 100%;
+                flex-grow: 0.9;
                 justify-content: space-between;
                 @include font-style($raleway-r, 18px, $b, uppercase);
-
-                @media (max-width: 575.98px) { 
+                @media (max-width: 575px) { 
+                    padding-top:10%;
                     @include font-style($raleway-r, 14px, $b, uppercase);
-                    padding-top:10%;
                 };
-                @media (min-width: 576px) and (max-width: 767.98px) {
+                @media (min-width: 576px) and (max-width: 767px) {
+                    padding-top:10%;
                     @include font-style($raleway-r, 16px, $b, uppercase);
-                    padding-top:10%;
                 };
-                @media (min-width: 767px) and (max-width: 991.98px) {
-                    @include font-style($raleway-r, 18px, $b, uppercase);
+                @media (min-width: 767px) and (max-width: 991px) {
                     padding-top:5%;
-                };
-                @media (min-width: 992px) and (max-width: 1199.98px) { 
-                    @include font-style($raleway-r, 15px, $b, uppercase);
-                }; 
-                @media (min-width: 1200px) and (max-width: 1276.98px) { 
                     @include font-style($raleway-r, 18px, $b, uppercase);
-                }; 
+                };
+                @media (min-width: 992px) and (max-width: 1199px) { 
+                    @include font-style($raleway-r, 15px, $b, uppercase);
+                };
 
-                 
                 .nav-item {
                     display: flex;
+                    padding: 25px 0px;
                     flex-flow: column;
                     text-align: center;
                     position: relative;
                     align-items: center;
                     justify-content: space-around;
-                   
                     &::before {
-                        content: ' ';
-                        width: 38.8%;
-                        height: 3px;
-                        background-color: transparent;
-                        position: absolute;
                         top:-3px;
-                    };
-        
-                    &::after {
+                        height: 3px;
                         content: ' ';
                         width: 38.8%;
-                        height: 2px;
-                        background-color: transparent;
                         position: absolute;
-                        bottom:-2px;
+                        background-color: transparent; 
                     };
-
+                    &::after {
+                        bottom:-2px;
+                        height: 2px;
+                        content: ' ';
+                        width: 38.8%;
+                        position: absolute;
+                        background-color: transparent;
+                    };
                     &:hover {
-
                         .nav-link {
                             color: $w;
                             opacity: 1;
-                        }
-                        
+                        };
                         &::before, &::after {
                             background-color: $r;
                         };
                     };
-        
                 };
-        
             };
-
         };
     };
-
 };

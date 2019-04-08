@@ -1,10 +1,13 @@
 .teamwork {
-    padding: 90px 0px;
+ 
+    padding-bottom: 90px;
+    padding-top: 90px;
     position: relative;
     @include introduce (100px, 50px, $b, $b);
 
     @media (max-width: 575.98px) { 
-        padding: 20px 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         @include media-introduce();
     };
 

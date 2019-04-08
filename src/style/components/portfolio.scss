@@ -1,39 +1,39 @@
 .portfolio {
-    background: #262626;
+    background: $bl-darck;
     text-align: center;
     padding: 100px 0px 109px 0px;
     position: relative;
     width: 100%;
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575px) { 
         padding: 50px 0px 50px 0px;
     };
-    @media (min-width: 576px) and (max-width: 991.98px) {
+    @media (min-width: 576px) and (max-width: 991px) {
         padding: 50px 0px 50px 0px;
     };
     &-title {
         @include font-style($raleway-bo,30px,$w);
         margin-bottom: 27px;
-        @media (max-width: 575.98px) { 
+        @media (max-width: 575px) { 
             margin-bottom: 7px;
         };
-        @media (min-width: 576px) and (max-width: 991.98px) {
+        @media (min-width: 576px) and (max-width: 991px) {
             margin-bottom: 10px;
         };
     };
 
     .nav {
-        @include font-style($lato-bo,16px,#a4a4a4, uppercase);
+        @include font-style($lato-bo,16px,$gray, uppercase);
         border: none;
         margin-bottom: 100px;
-        @media (max-width: 575.98px) { 
+        @media (max-width: 575px) { 
             margin-bottom: 20px;
         };
-        @media (min-width: 576px) and (max-width: 991.98px) {
+        @media (min-width: 576px) and (max-width: 991px) {
             margin-bottom: 25px;
         };
         &-link {
             text-decoration: none;
-            color:#a4a4a4;
+            color:$gray;
             border: none;
                 
             &:hover {
@@ -110,10 +110,10 @@
     };
     .scrollbar-wrapper {
         @include scroll-bar (20px, 20px, $r, absolute, 0px,-10px);
-        @media (max-width: 575.98px) { 
+        @media (max-width: 575px) { 
             @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,50%);
         };
-        @media (min-width: 576px) and (max-width: 767.98px) {
+        @media (min-width: 576px) and (max-width: 767px) {
             @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,30%);
         };
     }

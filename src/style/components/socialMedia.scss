@@ -1,15 +1,15 @@
 .social-media {
     display: flex;
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0px 100px 0px;
     position: relative;
     justify-content: center;
     
 
     @media (max-width: 575px) { 
-        padding: 50px 0px 0px 0px;
+        padding: 50px 0px 50px 0px;
     };
     @media (min-width: 576px) and (max-width: 767px)  {
-        padding: 50px 0px 0px 0px;
+        padding: 50px 0px 50px 0px;
     };
     &:hover {
        .social-media-bg {

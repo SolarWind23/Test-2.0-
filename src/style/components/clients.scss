@@ -1,93 +1,104 @@
 .clients {
-    background: url('../img/clients-bg.png');
-    background-size: cover;
     padding-top: 90px;
-    padding-bottom: 90px;
     position: relative;
-
-    
+    padding-bottom: 90px;
+    background-size: cover;
     @include introduce (100px, 50px);
+    background: url('../img/clients-bg.png');
     @media (max-width: 575px) { 
         padding-top: 20px;
         padding-bottom: 20px;
         @include media-introduce();
     };
-    .client-say-carousel {
-        .carousel {
-            @media (max-width: 575px) { 
-                #carouselCaptions+.carousel-inner {
-                    height: 100%;
-                };
-            };
-            text-align: center;
-            &-title {
-                @include font-style($raleway-m, 20px,$w, uppercase);
-                margin-bottom: 50px;
-                @media (max-width: 575px) { 
-                    margin-bottom: 30px;
-                };
-            };
-            &-text {
-                @include font-style($lato-r, 16px, $gray);
-                margin-bottom: 47px;
-                @media (max-width: 575px) { 
-                    margin-bottom: 20px;
-                };
-            };
-            .client {
-                &-img {
-                    margin-bottom: 17px;
-                };
-                &-name {
-                    @include font-style($raleway-bo, 16px, $r, uppercase);
-                    margin-bottom: 27px;
-                };
-            };
-            &-indicators {
-                margin-bottom: 0px;
-                .indicator {
-                    border: 1px solid transparent;
-                    background: $w;
-                    width: 8px;
-                    height: 8px;
 
-                    &.active {
-                        background: $r;
+    .client-say-carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .slide-item-container {
+            height: 100%;
+            text-align: center;
+            @media (max-width: 575px) { 
+                height: 100%;
+            };
+            .slide-item {
+                &-title {
+                    margin-bottom: 50px;
+                    @include font-style($raleway-m, 20px,$w, uppercase);
+                    @media (max-width: 575px) { 
+                        margin-bottom: 30px;
+                    };
+                };
+                &-text {
+                    margin-bottom: 47px;
+                    @include font-style($lato-r, 16px, $gray);
+                    @media (max-width: 575px) { 
+                        margin-bottom: 20px;
+                    };
+                };
+                .client {
+                    &-img {
+                        margin-bottom: 17px;
+                    };
+                    &-name {
+                        margin-bottom: 27px;
+                        @include font-style($raleway-bo, 16px, $r, uppercase);
                     };
                 };
             }; 
         };
+        .indicator {
+            margin-bottom: 0px;
+            .indicator-item {
+                width: 8px;
+                height: 8px;
+                background: $w;
+                border: 1px solid transparent;
+
+                &.active {
+                    background: $r;
+                };
+            };
+        }; 
     };
-    &-logos {
-        @include font-style($mgope, 24px, $b);
-        @media (max-width: 575px) { 
-            margin-top: 70px;
-        };
-        @media (min-width: 576px) and (max-width: 767px) {
-            margin-top: 70px;
-        };
-        @media (min-width: 768px) and (max-width: 991px) {
-            margin-top: 40px;
-        };
-        .clients-logo {
-            background: url('../img/clients-logo.png'),no-repeat;
-            background-size:cover;
+    &-resources {
+        .resource-item {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 45px 40px;
-            margin:25px 0px;
-            @media (min-width: 768px) and (max-width: 991px) { 
+            cursor: pointer;
+            position: relative;
+            @media (min-width: 768px) { 
+                height: 40%;
+            };
+            @media (max-width: 575px) { 
+               height: unset;
+               margin:35px 0px;
+            };
+            @media (min-width: 576px) and (max-width: 767px) {
+                margin: 35px 0px;
+            };
+            @media (min-width: 768px) and (max-width: 991px) {
+                margin: 20px 0px;
+            };
+            .item-bg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            };
+            .resource-logo {
+                top: 50%;
+                left: 50%;
                 display: flex;
-                flex-direction: column;
+                position: absolute;
+                align-items: center;
+                transform: translate(-50%, -50%) 
             };
-            .text {
-                margin-left: 10px;
+            .name {
+                margin-left: 8px;
+                @include font-style ($mgope, 24px, $bl-darck);
             };
+            
         };
     };
-
-
     @include scroll-bar (20px, 20px, $r, absolute, 0,-10px);
     @media (max-width: 575px) { 
         @include scroll-bar (20px, 20px, $r, absolute, 0,-10px,50%);

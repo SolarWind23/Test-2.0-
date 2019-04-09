@@ -1,29 +1,33 @@
 .services {
+    background: $bl-bg;
     padding: 100px 0px 0px 0px;
-    background: #272727;
-    @include introduce (90px, 48px, $w, #a4a4a4);
-    @media (max-width: 575.98px) { 
+    @include introduce (90px, 48px, $w, $gray);
+    @media (max-width: 575px) { 
         padding: 40px 0px 0px 0px;
         @include media-introduce();
     };
-    @media (min-width: 576px) and (max-width: 767.98px) { 
+    @media (min-width: 576px) and (max-width: 767px) { 
         padding: 40px 0px 0px 0px;
         @include media-introduce();
     };
 
     .technology {
-
         .item {
+            cursor: pointer;
+            @media (max-width: 991px) { 
+                justify-content: center;
+            };
+
             &-icon {
                 position: relative;
 
                 &-symbol {
-                    color: #262626;
-                    position: absolute;
-                    left:50%;
                     top:50%;
-                    transform: translate(-50%, -50%);
+                    left:50%;
                     font-size: 25px;
+                    color: $bl-darck;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
                 };
             };
 
@@ -31,42 +35,42 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 30px;
-                @include hexagon (60px, 60px, #a4a4a4, 0px);
+                @include hexagon (60px, 60px, $gray, 0px);
                 @include font-style ($raleway-m,20px,$w,uppercase);
-                @media (max-width: 575.98px) { 
-                    justify-content: center;
+                @media (max-width: 575px) { 
                     margin-bottom: 10px;
+                    justify-content: center;
                 };
-                @media (min-width: 576px) and (max-width: 991.98px) {
+                @media (min-width: 576px) and (max-width: 991px) {
                     text-align: center;
                     justify-content: center;
-                    @include hexagon (50px, 50px, #a4a4a4, 0px);
+                    @include hexagon (50px, 50px, $gray, 0px);
                     @include font-style ($raleway-m,20px,$w,uppercase);
                 };
-                @media (min-width: 768px) and (max-width: 991.98px) {
+                @media (min-width: 768px) and (max-width: 991px) {
                     margin-bottom: 10px;
                 };
             };
 
-
             &-text {
                 margin: 0px 0px 0px 30px;
-                @media (min-width: 576px) and (max-width: 991.98px) {
+                @media (min-width: 576px) and (max-width: 991px) {
                     margin: 0px 0px 0px 15px;
                 };
             };
 
             &-description {
-                @include font-style($lato-r,16px,#a4a4a4);
-                padding: 30px 30px 30px 30px;
                 margin-bottom: 50px;
-                background: #343434;
-                @media (max-width: 991.98px) { 
+                background: $bl-bg-light;
+                padding: 30px 30px 30px 30px;
+                @include font-style($lato-r,16px,$gray);
+
+                @media (max-width: 991px) { 
                     text-align: center;
                 };
-                @media (min-width: 768px) and (max-width: 991.98px) {
+                @media (min-width: 768px) and (max-width: 991px) {
                     padding: 20px;
-                    @include font-style($lato-r,15px,#a4a4a4);
+                    @include font-style($lato-r,15px,$gray);
                 };
             };
 
@@ -75,18 +79,14 @@
                     color:$w;
                 };
                 @include hexagon (60px, 60px, $r, 0px);
-                @media (min-width: 576px) and (max-width: 991.98px) {
+                @media (min-width: 576px) and (max-width: 991px) {
                     @include hexagon (50px, 50px,  $r, 0px);
                 };
 
                 .item-description {
                     color:$w;
-                    background: #3d2329;
+                    background: $hover-darck-red;
                 };
-            };
-
-            @media (max-width: 991.98px) { 
-               justify-content: center;
             };
         };
     };

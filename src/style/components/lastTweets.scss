@@ -1,12 +1,12 @@
 .last-tweets {
     position: relative;
-    padding: 100px 0px 0px 0px ; 
-    background: url("../img/last-tweets-bg.png"), no-repeat;
     background-size: cover;
+    padding: 100px 15px 0px 15px ; 
+    background: url("../img/last-tweets-bg.png"), no-repeat;
     .tweets {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
 
         &-icon {
             color:$r;
@@ -15,18 +15,18 @@
         };
 
         &-text {
-            @include font-style($lato-r,16px, $w);
+            width: 60%;
+            margin: auto;
             display: flex;
             text-align: center;
-            margin: auto;
-            width: 60%;
-        }
+            @include font-style($lato-r,16px, $w);
+        };
     };
     @include scroll-bar (20px, 20px, $r, relative, 70px, -11px);
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575px) { 
         @include scroll-bar (20px, 20px, $r, relative, 70px, -11px,50%);
     };
-    @media (min-width: 576px) and (max-width: 767.98px) {
+    @media (min-width: 576px) and (max-width: 767px) {
         @include scroll-bar (20px, 20px, $r, relative, 70px, -11px,30%);
     };
-}
+};

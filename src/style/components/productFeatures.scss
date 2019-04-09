@@ -19,10 +19,11 @@
 
         &-item-left {
             display: flex;
+            padding: 10px;
             text-align: right;
-            padding: 10px 20px;
             margin-bottom: 23px;
             align-items: center;
+            text-decoration: none;
             justify-content: flex-end;
             border: 1px solid $gray-super-light;
             @include font-style($raleway-m, 20px, $b, uppercase);

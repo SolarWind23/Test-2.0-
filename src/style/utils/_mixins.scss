@@ -56,8 +56,7 @@
         left:50%;
         width: 100%;
         transform: translateX(-50%);
-        z-index: 890;
-    
+        z-index: 1;
         .hexagon-wrapper {
             width: $width;
             height: $height;
@@ -65,14 +64,12 @@
             position: relative;
             display: inline-block;
         };
-    
         .hexagon {
             height: 100%;
             width: calc(100% * 0.57735);
             display: inline-block;
             background-color:$bg-color;
         };
-        
         .hexagon:before {
             position: absolute;
             top: 0;
@@ -83,7 +80,6 @@
             content: '';
             transform: rotateZ(60deg);
         };
-        
         .hexagon:after {
             position: absolute;
             top: 0;
@@ -94,7 +90,6 @@
             content: '';
             transform: rotateZ(-60deg);
         };
-    
         &-side{
             border:1px solid $bg-color;
             width:$sideWidth;
@@ -106,16 +101,13 @@
     .introduce {
         text-align: center;
         margin-bottom:$marginContainer;
-
         &-title {
             @include font-style($raleway-bo, 30px, $colorTitle);
             margin-bottom: $marginTitle;
         };
-
         .colored {
             color:$r;
         };
-
         &-text {
             @include font-style($lato-bo, 16px, $colorText);  
         };  

@@ -1,87 +1,71 @@
 .prices {
+    padding: 110px 15px 100px 15px;
     @include introduce (100px, 50px, $b,$b);
-    padding: 110px 0px 100px 0px;
-    @media (max-width: 992.98px) { 
+
+    @media (max-width: 992px) { 
         @include media-introduce();
-        padding: 50px 0px 50px 0px
+        padding: 50px 15px 50px 15px
     };
+
     .offer-item {
-        @media (max-width: 992.98px) { 
-            margin-bottom: 50px;
-        };
+       
         &:hover {
-            .offer-price {
-                background: $r;
+            .item-card-price,.order-btn {
                 color:$w;
-                border:1px solid transparent;
+                background: $r;
                 .year {
                     color:$w;
                 };
             };
-            .offer-order {
-            
-                .order {
-                    
-                    background: $r;
-                    color:$w;
-
-                    &:focus {
-                        border: transparent;
-                        outline: none;
-                    };
-                };
-            }
+            @media (max-width: 992px) { 
+                margin-bottom: 50px;
+            };
         };
     };
 
-    .card {
-        &-header {
+    .item-card {
+        &-title {
             background:$b;
             @include font-style($raleway-m,20px,$w, uppercase);
         };
-        .offer {
-            &-title {
-                background:$b;
-                @include font-style($raleway-m,20px,$w, uppercase);
-            };
-            &-price {
-    
-                @include font-style($lato-bl,50px,#262626, uppercase);
-                @media (min-width: 992px) and (max-width: 1199.98px) {
-                    @include font-style($lato-bl,40px,#262626, uppercase);
-                };
 
-                .year{
-                    @include font-style($lato-r,16px,#262626);
-                };
+        &-price {
+            transition: all .5s;
+            @include font-style($lato-bl,50px,$bl-darck, uppercase);
+            @media (min-width: 992px) and (max-width: 1199px) {
+                @include font-style($lato-bl,40px,$bl-darck, uppercase);
             };
-            &-datasheet {
-                @include font-style($lato-r,16px,#262626);
-                @media (min-width: 992px) and (max-width: 1199.98px) {
-                    @include font-style($lato-r,12px,#262626);
-                };
+            .year{
+                transition: all .5s;
+                @include font-style($lato-r,16px,$bl-darck);
             };
-            
-            &-order {
-                background: $w;
-                .order {
-                    border: none;
-                    display: flex;
-                    padding: 13px 50px;
-                    justify-content: center;
-                    background: #262626;
-                    @include font-style($raleway-r,16px,$w, uppercase);
-                    @media (min-width: 992px) and (max-width: 1199.98px) {
-                        @include font-style($raleway-r,15px,$w, uppercase);
-                        padding: 13px 30px;
-                    };
-                    &:focus {
-                        box-shadow: none;
-                    };
-                };
-            };
-    
         };
-        
+
+        &-datasheet {
+            @include font-style($lato-r,16px,$bl-darck);
+            @media (min-width: 992px) and (max-width: 1199px) {
+                @include font-style($lato-r,12px,$bl-darck);
+            };
+        };
+
+        &-order {
+            background: $w;
+            .order-btn {
+                border: none;
+                display: flex;
+                padding: 13px 50px;
+                transition: all .5s;
+                background: $bl-darck;
+                justify-content: center;
+                @include font-style($raleway-r,16px,$w, uppercase);
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    @include font-style($raleway-r,15px,$w, uppercase);
+                    padding: 13px 30px;
+                };
+                &:focus {
+                    box-shadow: none;
+                };
+            };
+        };
     };
 };

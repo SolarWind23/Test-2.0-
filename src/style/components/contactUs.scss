@@ -6,75 +6,83 @@
     };
     @include introduce(97px, 50px, $b, $b);
    
-    @media  (max-width: 991.98px) { 
+    @media  (max-width: 991px) { 
         padding-top: 50px;
         @include media-introduce();
     };
-    .wrapper {
-        @media (max-width: 575.98px) { 
+    .map-wrapper {
+        width: 100%;
+        bottom: -4px;
+        position: relative;
+        @media (max-width: 575px) { 
            display: flex;
-           flex-direction: column;
            align-items: center;
+           flex-direction: column;
+
         };
-        @media (min-width: 576px) and (max-width: 767.98px) {
+        @media (min-width: 576px) and (max-width: 767px) {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            flex-direction: column;
         };
 
-        
+        .goggle-map {
+            width: 100%;
+        };
 
         .talk-buble-wrapper {
-            transform: translate(-20%, -10%);
-            position: absolute;
-            bottom: 10%;
-            z-index: 1;
             left:20%;
-            @media (max-width: 575.98px) { 
-                transform: translate(-20%, -50%);        
+            z-index: 1;
+            bottom: 10%;
+            position: absolute;
+            transform: translate(-20%, -10%);
+            @include font-style($lato-r, 16px, $w);
+            @media (max-width: 575px) { 
                 bottom: 50%;
                 font-size: 15px;
-            };
-            @media (min-width: 576px) and (max-width: 767.98px) {
                 transform: translate(-20%, -50%);        
+            };
+            @media (min-width: 576px) and (max-width: 767px) {
                 bottom: 50%;
                 font-size: 15px;
+                transform: translate(-20%, -50%);        
             };
-            @media (min-width: 768px) and (max-width: 991.98px) {
-                transform: translate(-10%, -20%);        
-                bottom: 20%;
+            @media (min-width: 768px) and (max-width: 991px) {
                 left:10%;
+                bottom: 20%;
                 font-size: 16px;
-            }
+                transform: translate(-10%, -20%);        
+            };
             .talk-buble {
-                padding: 35px 45px 47px 25px;
                 width: 300px;
-                background: #262626;
+                background: $bl-bg;
                 position: relative;
-                list-style-type: none; 
-                @media (max-width: 575.98px) { 
-                    padding: 16px 15px 17px 15px;
+                list-style-type: none;
+                padding: 35px 45px 47px 25px;
+                @media (max-width: 575px) { 
                     width: 220px;
+                    padding: 16px 15px 17px 15px;
                 };
-                @media (min-width: 576px) and (max-width: 767.98px) {
-                    padding: 16px 15px 17px 15px;
+                @media (min-width: 576px) and (max-width: 767px) {
                     width: 220px;
+                    padding: 16px 15px 17px 15px;
                 };
                 &:before {
-                    content: "";
                     color:$w;
-                    position: absolute;
-                    right: 14px;
-                    top: 100%;
                     width: 0;
                     height: 0;
-                    border-top: 14px solid transparent;
-                    border-right: 56px solid #262626;
-                    border-bottom: 14px solid transparent;
+                    top: 100%; 
+                    right: 14px;
+                    content: "";
+                    position: absolute;
                     transform: rotate(-57deg);
+                    border-right: 56px solid $bl-bg;
+                    border-top: 14px solid transparent;
+                    border-bottom: 14px solid transparent;
                 };
                 &-text {
                     color: $w;
+                    margin-bottom: 12px;
                     &:last-child{
                         margin: 0px;
                     };
@@ -82,88 +90,86 @@
             };
         };
     
-        .message-wrapprer {
-            transform: translateX(-17.85);
-            padding: 50px 45px 47px 44px;
-            border: 1px solid #e7e7e7;
-            background: #ffffff;
-            box-shadow: #e7e7e7;
-            position: absolute;
-            right: 17.85%;
-            bottom: 0px;
-            width: 33.5%;
-            margin: 0px;
+        .message {
             z-index: 1;
-    
-            @media (max-width: 575.98px) { 
-                position: relative;
-                width: 100%;
-                left: 0px;
-                bottom: 0px;
-                padding:20px 15px 20px 15px;
-                margin: 20px 0px;
-            };
-            @media (min-width: 576px) and (max-width: 767.98px) {
-                position: relative;
-                width: 100%;
-                left: 0px;
-                bottom: 0px;
-                padding:20px 15px 20px 15px;
-                margin: 20px 0px;
-            };
-            @media (min-width: 768px) and (max-width: 991.98px) {
-                right: 10%;
-                bottom: 0px;
-                width: 33.5%;
-                padding:20px;
+            margin: 0px;
+            bottom: 4px;
+            width: 33.5%;
+            right: 7.85%;
+            background:$w;
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            padding: 50px 45px 47px 44px;
+            transform: translateX(-17.85);
 
-            }
-    
-            .message-title {
-                @include font-style($raleway-m, 20px, $b, uppercase);
-                margin-bottom: 50px;
+            @media (max-width: 575px) { 
+                left: 0px;
+                width: 80%;
+                bottom: 4px;
+                position: static;
+                margin: 20px auto;
+                padding:20px 15px 20px 15px;
+                box-shadow: 0 0 10px $gray-super-light;
+
             };
-        
-            .form-control {
-                margin-bottom: 17px;
-                @include font-style($lato-r, 16px, #505050, capitalize);
-                &:focus {
-                    box-shadow: 0 0 0 0.2rem #e7e7e7;
-                    border-color: #e7e7e7;
-                };
+            @media (min-width: 576px) and (max-width: 767px) {
+                left: 0px;
+                width: 80%;
+                bottom: 4px;
+                position: static;                
+                margin: 20px auto;
+                padding:20px 15px 20px 15px;
+                box-shadow: 0 0 10px $gray-super-light;
+
             };
-            .btn {
-                @include font-style($lato-r, 16px, $w, uppercase);
-                border-radius: 0px;
-                @media (max-width: 991.98px) { 
-                    width: 100%;
-                };
-                &:focus {
-                    outline: none;
-                    box-shadow: none;
-                    border-color:transparent;
-                };
+            @media (min-width: 768px) and (max-width: 991px) {
+                right: 3%;
+                bottom: 4px;
+                width: 33.5%;
+                padding: 20px;
             };
             
-        };
+            &-title {
+                margin-bottom: 50px;                
+                @include font-style($raleway-m, 20px, $b, uppercase);
+            };
+            &-form {
+                display: flex;
+                flex-direction: column;
 
-        
+                .message-input {
+                    outline: none;
+                    padding: 11px;
+                    margin-bottom: 17px;
+                    border: 1px solid $gray-super-light;
+                    @include font-style($lato-r, 16px, $bl-light, capitalize);
+                    &:focus {
+                        box-shadow: none ;
+                        border-color: $gray-light;
+                    };
+                };
+                .btn {
+                    border: none;
+                    outline: none;
+                    padding: 12px 30px;
+                    background: $bl-bg;
+                    align-self: flex-end;
+                    @include font-style($lato-r, 16px, $w, uppercase);
+                    @media (max-width: 991px) { 
+                        width: 100%;
+                    };
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border-color:transparent;
+                    };
+                };
+            };
+        };
     };
-   
     .map-wrapper {
-        width: 100%;
         z-index: 0;
         
-        
-        .goggle-map {
-            width: 100%;
-        };
     };
 };
-
-   
-
-
-
-
-

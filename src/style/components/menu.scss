@@ -68,6 +68,7 @@
             .toggle-bar {
                 transition: height .5s;
                 @media (max-width: 575px) { 
+                    height: 100vh;
                     padding-top: 20px;
                 };
                 @media (min-width: 576px) and (max-width: 767px) {
@@ -84,7 +85,8 @@
                 justify-content: space-between;
                 @include font-style($raleway-r, 18px, $b, uppercase);
                 @media (max-width: 575px) { 
-                    padding-top:10%;
+                    padding-top:13%;
+                    justify-content: flex-start;
                     @include font-style($raleway-r, 14px, $b, uppercase);
                 };
                 @media (min-width: 576px) and (max-width: 767px) {
@@ -92,14 +94,15 @@
                     @include font-style($raleway-r, 16px, $b, uppercase);
                 };
                 @media (min-width: 767px) and (max-width: 991px) {
-                    padding-top:5%;
+                    padding-top:0%;
                     @include font-style($raleway-r, 18px, $b, uppercase);
                 };
                 @media (min-width: 992px) and (max-width: 1199px) { 
                     @include font-style($raleway-r, 15px, $b, uppercase);
                 };
 
-                .nav-item {
+
+                .list-item {
                     display: flex;
                     padding: 25px 0px;
                     flex-flow: column;
@@ -131,6 +134,15 @@
                         &::before, &::after {
                             background-color: $r;
                         };
+                    };
+                    @media (max-width: 575px) { 
+                        padding: 15px 0px;
+                    };
+                    @media (min-width: 576px) and (max-width: 767px) {
+                        padding: 13px 0px;
+                    };
+                    @media (min-width: 767px) and (max-width: 991px) {
+                        padding: 15px 0px;
                     };
                 };
             };

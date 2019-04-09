@@ -1,50 +1,52 @@
 .social-media {
-    cursor: pointer;
+    display: flex;
+    padding: 100px 0px 0px 0px;
     position: relative;
-    background: url('../img/social-media-bg.png'), no-repeat, center;
-    background-position: center;
-    background-size: cover;
-    padding: 100px 0px;
+    justify-content: center;
     
-    .overlay {
-        width: 100%;
-        height: 100%;
-        background: black;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
+
+    @media (max-width: 575px) { 
+        padding: 50px 0px 0px 0px;
+    };
+    @media (min-width: 576px) and (max-width: 767px)  {
+        padding: 50px 0px 0px 0px;
     };
     &:hover {
-        .overlay {
-            opacity: 0.8;
-        };
+       .social-media-bg {
+            filter: brightness(30%);
+        };  
     };
-    @media (max-width: 575.98px) { 
-        padding: 50px 0px;
+    &-bg {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        filter: brightness(100%);
     };
-    @media (min-width: 576px) and (max-width: 767.98px)  {
-        padding: 50px 0px;
-    };
+
     &-links {
-        
+        z-index: 1;
+        display: flex;
+        justify-self: center;
+    
         .title {
-            z-index: 900;
             text-align: center;
             margin-bottom: 50px;
             @include font-style($raleway-bo, 30px, $w);
             .colored {
                 color:$r;
             };
-            @media (max-width: 575.98px) { 
+            @media (max-width: 575px) { 
                 margin-bottom: 20px;
                 @include font-style($raleway-bo, 25px, $w);
             };
-            @media (min-width: 576px) and (max-width: 767.98px)  {
+            @media (min-width: 576px) and (max-width: 767px)  {
                 margin-bottom: 20px;
                 @include font-style($raleway-bo, 25px, $w);
             };
-            @media (min-width: 768px) and (max-width: 991.98px) {
+            @media (min-width: 768px) and (max-width: 991px) {
                 margin-bottom: 30px;
                 @include font-style($raleway-bo, 30px, $w);
             };
@@ -52,12 +54,13 @@
 
         .link {
             display: flex;
+            cursor: pointer;
             align-items: center;
             flex-direction: column;
-            @media (max-width: 575.98px) {
+            @media (max-width: 575px) {
                margin-bottom: 20px;
             };
-            @media (min-width: 576px) and (max-width: 767.98px)  {
+            @media (min-width: 576px) and (max-width: 767px)  {
                 margin-bottom: 30px;
             };
             
@@ -87,7 +90,7 @@
                     transform: translate(-50%, -50%);
                 }
             };
-            @media (max-width: 575.98px) {
+            @media (max-width: 575px) {
                 @include hexagon(45px,45px,transparent, 0px);
                 .hexagon {
                     text-align: center;
@@ -127,15 +130,15 @@
             .info {
                 margin-top: 40px;
                 @include font-style ($lato-r,16px,$w);
-                @media (max-width: 575.98px) {
+                @media (max-width: 575px) {
                     margin-top: 10px;
                     @include font-style ($lato-r,15px,$w);
                 };
-                @media (min-width: 576px) and (max-width: 767.98px) {
+                @media (min-width: 576px) and (max-width: 767px) {
                     margin-top: 10px;
                     @include font-style ($lato-r,15px,$w);
                 };
-                @media (min-width: 768px) and (max-width: 991.98px) {
+                @media (min-width: 768px) and (max-width: 991px) {
                     margin-top: 25px;
                     @include font-style ($lato-r,16px,$w);
                 };
@@ -146,10 +149,10 @@
         
     };
     @include scroll-bar (20px, 20px, $r, absolute, 0,-11px);
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575px) { 
         @include scroll-bar (20px, 20px, $r, absolute, 0,-11px,50%);
     };
-    @media (min-width: 576px) and (max-width: 767.98px) {
+    @media (min-width: 576px) and (max-width: 767px) {
         @include scroll-bar (20px, 20px, $r, absolute, 0,-11px,30%);
     };
 };

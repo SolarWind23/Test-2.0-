@@ -22,14 +22,14 @@
                 </button>   
                 <div class="toggle-bar collapse navbar-collapse" id="navbarNavAltMarkup">
                   <ul class="navigation-links navbar-nav">
-                    <li class="nav-item"><a class="nav-link p-0" href="#">home</a></li>
-                    <li class="nav-item"><a class="nav-link p-0" href="#">about us</a></li>
-                    <li class="nav-item"><a class="nav-link p-0" href="#">portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link p-0" href="#">clients</a></li>
-                    <li class="nav-item"><a class="nav-link p-0" href="#">team</a></li>
-                    <li class="nav-item"><a class="nav-link p-0" href="#">services</a></li>
-                    <li class="nav-item"><a class="nav-link p-0" href="#">blog</a></li>
-                    <li class="nav-item"><a class="nav-link p-0" href="#">contact</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">home</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">about us</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">portfolio</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">clients</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">team</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">services</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">blog</a></li>
+                    <li class="list-item nav-item"><a class="nav-link p-0" href="#">contact</a></li>
                   </ul>
                 </div>
               </nav>
@@ -701,16 +701,15 @@
                 </div>
                 <div class="container">
                     <div class="row m-0">
-                        <div class="clients-say d-flex justify-content-center col-12 order-1 col-md-12  col-lg order-md-1">
+                        <div class="clients-say d-flex justify-content-center col-12 order-1 col-md-12 order-md-1 col-lg ">
                             <div class="client-say-carousel">
                                 <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
-                                
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <h5 class="carousel-title">
+                                    <div class="slide-item-container carousel-inner">
+                                        <div class="slide-item carousel-item active">
+                                            <h5 class="slide-item-title">
                                                 happy clients say
                                             </h5>
-                                            <p class="carousel-text">
+                                            <p class="slide-item-text">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Integer sed magna vel velit dignissim luctus eu in urna. 
                                                 Dapibus egestas turpis.
@@ -721,13 +720,12 @@
                                                     amr srour
                                                 </p>
                                             </div>
-                                            
                                         </div>
-                                        <div class="carousel-item"> 
-                                            <h5 class="carousel-title">
+                                        <div class="slide-item carousel-item">
+                                            <h5 class="slide-item-title">
                                                 happy clients say
                                             </h5>
-                                            <p class="carousel-text">
+                                            <p class="slide-item-text">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Integer sed magna vel velit dignissim luctus eu in urna. 
                                                 Dapibus egestas turpis.
@@ -735,15 +733,15 @@
                                             <div class="client">
                                                 <img src="./img/client-img.png" alt="" class="client-img">
                                                 <p class="client-name">
-                                                    buakaw parpramuk
+                                                    amr srour
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="carousel-item">
-                                            <h5 class="carousel-title">
+                                        <div class="slide-item carousel-item">
+                                            <h5 class="slide-item-title">
                                                 happy clients say
                                             </h5>
-                                            <p class="carousel-text">
+                                            <p class="slide-item-text">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 Integer sed magna vel velit dignissim luctus eu in urna. 
                                                 Dapibus egestas turpis.
@@ -751,63 +749,53 @@
                                             <div class="client">
                                                 <img src="./img/client-img.png" alt="" class="client-img">
                                                 <p class="client-name">
-                                                    jon snow
+                                                    amr srour
                                                 </p>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselCaptions" data-slide-to="0" class="indicator active"></li>
-                                        <li data-target="#carouselCaptions" data-slide-to="1" class="indicator"></li>
-                                        <li data-target="#carouselCaptions" data-slide-to="2" class="indicator"></li>
+                                    <ol class="indicator carousel-indicators">
+                                        <li data-target="#carouselCaptions" data-slide-to="0" class="indicator-item indicator active"></li>
+                                        <li data-target="#carouselCaptions" data-slide-to="1" class="indicator-item indicator"></li>
+                                        <li data-target="#carouselCaptions" data-slide-to="2" class="indicator-item indicator"></li>
                                     </ol>
                                 </div>
                             </div>
                         </div>
-                        <div class="clients-logos col-12 order-2 col-md-12 col-lg order-md-2">
-                            <div class="row m-0 h-100 d-flex justify-content-around align-items-around">
-                
-                                <div class="clients-logo col-12 col-sm-5 col-md-">
-                                    <div class="clients-icon">
-                                        <img src="./img/graphicriver-icon.png" alt="">
+                        <div class="clients-resources col-12 order-2 col-md-12 order-md-2 col-lg ">
+                            <div class="row m-0 h-100 align-content-between">
+                                <a href="#" class="resource-item col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <img src="./img/clients-logo.png" alt="" class="item-bg">
+                                    <div class="resource-logo">
+                                        <img src="./img/graphicriver-icon.png" alt="" class="item-logo">
+                                        <span class="name">graphicriver</span>
                                     </div>
-                                    <span class="text">
-                                        graphicriver
-                                    </span> 
-                                </div>
-                
-                                <div class="clients-logo col-12 col-sm-5 col-md-">
-                                    <div class="clients-icon">
-                                        <img src="./img/videoHive-icon.png" alt="">
+                                </a>
+                                <a href="#" class="resource-item col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <img src="./img/clients-logo.png" alt="" class="item-bg">
+                                    <div class="resource-logo">
+                                        <img src="./img/videoHive-icon.png" alt="" class="item-logo">
+                                        <span class="name">videohive</span>
                                     </div>
-                                    <span class="text">
-                                        videohive
-                                    </span> 
-                                </div>
-                
-                                <div class="clients-logo col-12 col-sm-5 col-md-">
-                                    <div class="clients-icon">
-                                        <img src="./img/photodune-icon.png" alt="">
+                                </a>
+                                <a href="#" class="resource-item col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <img src="./img/clients-logo.png" alt="" class="item-bg">
+                                    <div class="resource-logo">
+                                        <img src="./img/photodune-icon.png" alt="" class="item-logo">
+                                        <span class="name">photodune</span>
                                     </div>
-                                    <span class="text">
-                                        photodune
-                                    </span> 
-                                </div>
-                
-                                <div class="clients-logo col-12 col-sm-5 col-md-">
-                                    <div class="clients-icon">
-                                        <img src="./img/codecanion-icon.png" alt="">
+                                </a>
+                                <a href="#" class="resource-item col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <img src="./img/clients-logo.png" alt="" class="item-bg">
+                                    <div class="resource-logo">
+                                        <img src="./img/codecanion-icon.png" alt="" class="item-logo">
+                                        <span class="name">codecanyon</span>
                                     </div>
-                                    <span class="text">
-                                        codecanyon
-                                    </span> 
-                                </div>
-                
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                    
                 <div class="scrollbar">
                     <span class="scrollbar-side"></span>
                     <div class="hexagon-wrapper">
@@ -815,9 +803,8 @@
                     </div>
                     <span class="scrollbar-side"></span>
                 </div>
-                
             </section>
-            <section class="teamwork container">
+            <section class="teamwork">
                 <div class="introduce">
                     <h5 class="introduce-title">
                         our <span class="colored">teamwork </span>
@@ -830,141 +817,122 @@
                     </p>
                 </div>
                 <div class="team container row ">
-            
                     <div class="team-member col-12 col-sm-5 col-md-5 col-lg">
                         <div class="team-member-img">
                             <div class="overlay">
-                                <button class="icons">
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
-                                        
                                         <div class="hexagon"></div>
                                         <i class="fab fa-facebook-f logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-twitter logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-google-plus-g logo"></i>
                                     </div>
-                                </button>
+                                </a>
                             </div>
-                            <img src="./img/bruce-wane.png" alt="" class="member-picture">
+                            <img src="./img/bruce-wane.png" alt="" class="member-picture w-100">
                         </div>
-                        <p class="team-member-name">
-                            Bruce Wayne
-                        </p>
-                        <p class="team-member-activity">
-                            Webdesigner
-                        </p>
-            
+                        <p class="team-member-name">Bruce Wayne</p>
+                        <p class="team-member-activity">Webdesigner</p>
                     </div>
             
                     <div class="team-member col-12 col-sm-5 col-md-5 col-lg">
                         <div class="team-member-img">
                             <div class="overlay">
-                                <button class="icons">
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         
                                         <div class="hexagon"></div>
                                         <i class="fab fa-facebook-f logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-twitter logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-google-plus-g logo"></i>
                                     </div>
-                                </button>
+                                </a>
                             </div>
-                            <img src="./img/amr-srour.png" alt="" class="member-picture">
+                            <img src="./img/amr-srour.png" alt="" class="member-picture w-100">
                         </div>
-                        <p class="team-member-name">
-                            amr srour
-                        </p>
-                        <p class="team-member-activity">
-                            Webdesigner
-                        </p>
+                        <p class="team-member-name">amr srour</p>
+                        <p class="team-member-activity">Webdesigner</p>
                     </div>
             
                     <div class="team-member col-12 col-sm-5 col-md-5 col-lg">
                         <div class="team-member-img">
                             <div class="overlay">
-                                <button class="icons">
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         
                                         <div class="hexagon"></div>
                                         <i class="fab fa-facebook-f logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-twitter logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-google-plus-g logo"></i>
                                     </div>
-                                </button>
+                                </a>
                             </div>
-                            <img src="./img/sara-doe.png" alt="" class="member-picture">
+                            <img src="./img/sara-doe.png" alt="" class="member-picture w-100">
                         </div>
-                        <p class="team-member-name">
-                            sara doe
-                        </p>
-                        <p class="team-member-activity">
-                            Webdesigner
-                        </p>
+                        <p class="team-member-name">sara doe</p>
+                        <p class="team-member-activity">Webdesigner</p>
                     </div>
             
                     <div class="team-member col-12 col-sm-5 col-md-5 col-lg">
                         <div class="team-member-img">
                             <div class="overlay">
-                                <button class="icons">
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         
                                         <div class="hexagon"></div>
                                         <i class="fab fa-facebook-f logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-twitter logo"></i>
                                     </div>
-                                </button>
-                                <button class="icons">
+                                </a>
+                                <a href="#" class="icons">
                                     <div  class="hexagon-wrapper">
                                         <div class="hexagon"></div>
                                         <i class="fab fa-google-plus-g logo"></i>
                                     </div>
-                                </button>
+                                </a>
                             </div>
-                            <img src="./img/jon-de.png" alt="" class="member-picture">
+                            <img src="./img/jon-de.png" alt="" class="member-picture w-100">
                         </div>
-                        <p class="team-member-name">
-                            jon de
-                        </p>
-                        <p class="team-member-activity">
-                            Webdesigner
-                        </p>
+                        <p class="team-member-name">jon de</p>
+                        <p class="team-member-activity">Webdesigner</p>
                     </div>
-            
                 </div>
+            
                 <div class="scrollbar">
                     <span class="scrollbar-side"></span>
                     <div class="hexagon-wrapper">
@@ -972,13 +940,13 @@
                     </div>
                     <span class="scrollbar-side"></span>
                 </div>
+                
             </section>
             <section class="skills">
                 <div class="introduce">
                     <h5 class="introduce-title">
                         our <span class="colored">Skills</span>
                     </h5>
-            
                     <p class="introduce-text">
                         Lorem ipsum dolor sit amet, consectetur 
                         <span class="colored"> adipiscing elit.</span> 
@@ -987,54 +955,29 @@
                     </p>
                 </div>
                 <div class="infographic container">
-                    <div class="row d-flex justify-content-around">
-            
+                    <div class="row  justify-content-around">
                         <div class="infographic-item col-12 col-sm-6 col-md col-lg">
-                            <div class="infographic-icon">
-                                <img src="./img/90-percent.png" alt="" class="infografic-img">
-                            </div>
-                            <div class="infographic-title">
-                                photoshop
-                            </div>
-                            <div class="infographic-description">
-                                Donec luctus tortor in placerat faucibus
-                            </div>
+                            <img src="./img/90-percent.png" alt="" class="infografic-img">
+                            <h5 class="infographic-title">photoshop</h5>
+                            <p class="infographic-description"> Donec luctus tortor in placerat faucibus</p>
                         </div>
             
                         <div class="infographic-item col-12 col-sm-6 col-md col-lg">
-                            <div class="infographic-icon">
-                                <img src="./img/80-percent.png" alt="" class="infografic-img">
-                            </div>
-                            <div class="infographic-title">
-                                HTML
-                            </div>
-                            <div class="infographic-description">
-                                Donec luctus tortor in placerat faucibus
-                            </div>
+                            <img src="./img/80-percent.png" alt="" class="infografic-img">
+                            <h5 class="infographic-title">HTML</h5>
+                            <p class="infographic-description"> Donec luctus tortor in placerat faucibus</p>
                         </div>
             
                         <div class="infographic-item col-12 col-sm-6 col-md col-lg">
-                            <div class="infographic-icon">
-                                <img src="./img/70-percent.png" alt="" class="infografic-img">
-                            </div>
-                            <div class="infographic-title">
-                                php
-                            </div>
-                            <div class="infographic-description">
-                                Donec luctus tortor in placerat faucibus
-                            </div>
+                            <img src="./img/70-percent.png" alt="" class="infografic-img">
+                            <h5 class="infographic-title">php</h5>
+                            <p class="infographic-description"> Donec luctus tortor in placerat faucibus</p>
                         </div>
             
                         <div class="infographic-item col-12 col-sm-6 col-md col-lg">
-                            <div class="infographic-icon">
-                                <img src="./img/90-percent.png" alt="" class="infografic-img">
-                            </div>
-                            <div class="infographic-title">
-                                wordpress
-                            </div>
-                            <div class="infographic-description">
-                                Donec luctus tortor in placerat faucibus
-                            </div>
+                            <img src="./img/90-percent.png" alt="" class="infografic-img">
+                            <h5 class="infographic-title">wordpress</h5>
+                            <p class="infographic-description"> Donec luctus tortor in placerat faucibus</p>
                         </div>
                     </div>
                 </div>
@@ -1053,158 +996,129 @@
                         Dapibus egestas turpis. 
                     </p>
                 </div>
+            
                 <div class="container">
                     <div class="technology row">
-                        <div class="item col-12 col-sm-6 col-md-4 col-lg-6">
-                
+                        <div class="item col-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="item-title">
-            
                                 <div class="item-icon">
                                     <div  class="hexagon-wrapper">
-                                        
                                         <div class="hexagon"></div>
                                         <i class="fas fa-code item-icon-symbol"></i>
                                     </div>
                                 </div>
-                                
                                 <p class="item-text">development</p>
                             </div>
-            
-                            <div class="item-description">
+                            <p class="item-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Integer sed magna vel velit dignissim luctus eu in urna 
                                 Dapibus egestas in turpis and Praesent faucibus 
                                 nisl sit amet nulla sollicitudin.
-                            </div>
-            
+                            </p>
                         </div>
-                        <div class="item col-12 col-sm-6 col-md-4 col-lg-6">
             
+                        <div class="item col-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="item-title">
-            
                                 <div class="item-icon">
-                                    <div  class="hexagon-wrapper">
-                                        
+                                    <div  class="hexagon-wrapper"> 
                                         <div class="hexagon"></div>
                                         <i class="fab fa-html5 item-icon-symbol"></i>
                                     </div>
                                 </div>
-                
                                 <p class="item-text">
                                     HTML / CSS
                                 </p>
                             </div>
-            
                             <p class="item-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Integer sed magna vel velit dignissim luctus eu in urna 
                                 Dapibus egestas in turpis and Praesent faucibus 
                                 nisl sit amet nulla sollicitudin.
                             </p>
-                            
                         </div>
-                        <div class="item col-12 col-sm-6 col-md-4 col-lg-6">
             
+                        <div class="item col-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="item-title">
-            
                                 <div class="item-icon">
-                                    <div  class="hexagon-wrapper">
-                                        
+                                    <div  class="hexagon-wrapper">  
                                         <div class="hexagon"></div>
                                         <i class="fab fa-wordpress-simple item-icon-symbol"></i>
                                     </div>
                                 </div>
-                
                                 <p class="item-text">
                                     Wordpress
                                 </p>
                             </div>
-            
                             <p class="item-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Integer sed magna vel velit dignissim luctus eu in urna 
                                 Dapibus egestas in turpis and Praesent faucibus 
                                 nisl sit amet nulla sollicitudin.
                             </p>
-                                
                         </div>
-                        <div class="item col-12 col-sm-6 col-md-4 col-lg-6">
             
+                        <div class="item col-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="item-title">
-            
                                 <div class="item-icon">
-                                    <div  class="hexagon-wrapper">
-                                        
+                                    <div  class="hexagon-wrapper">                            
                                         <div class="hexagon"></div>
                                         <i class="fas fa-mobile-alt item-icon-symbol"></i>
                                     </div>
-                                </div>
-                
+                                </div>   
                                 <p class="item-text">
                                     Applications
                                 </p>
                             </div>
-            
                             <p class="item-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Integer sed magna vel velit dignissim luctus eu in urna 
                                 Dapibus egestas in turpis and Praesent faucibus 
                                 nisl sit amet nulla sollicitudin.
-                            </p>
-                            
+                            </p>          
                         </div>
-                        <div class="item col-12 col-sm-6 col-md-4 col-lg-6">
             
+                        <div class="item col-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="item-title">
-            
                                 <div class="item-icon">
-                                    <div  class="hexagon-wrapper">
-                                        
+                                    <div  class="hexagon-wrapper">                           
                                         <div class="hexagon"></div>
                                         <i class="fas fa-pencil-alt item-icon-symbol"></i>
                                     </div>
                                 </div>
-                
                                 <p class="item-text">
                                     ui / ux design
                                 </p>
                             </div>
-            
                             <p class="item-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Integer sed magna vel velit dignissim luctus eu in urna 
                                 Dapibus egestas in turpis and Praesent faucibus 
                                 nisl sit amet nulla sollicitudin.
-                            </p>
-                            
+                            </p>              
                         </div>
-                        <div class="item col-12 col-sm-6 col-md-4 col-lg-6">
             
+                        <div class="item col-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="item-title">
-            
                                 <div class="item-icon">
-                                    <div  class="hexagon-wrapper">
-                                        
+                                    <div  class="hexagon-wrapper">          
                                         <div class="hexagon"></div>
                                         <i class="fas fa-laptop item-icon-symbol"></i>
                                     </div>
                                 </div>
-                
                                 <p class="item-text">
                                     Responsive layout
                                 </p>
                             </div>
-            
                             <p class="item-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Integer sed magna vel velit dignissim luctus eu in urna 
                                 Dapibus egestas in turpis and Praesent faucibus 
                                 nisl sit amet nulla sollicitudin.
                             </p>
-                            
                         </div>
                     </div>
                 </div>
+            
                 <div class="scrollbar">
                     <span class="scrollbar-side"></span>
                     <div class="hexagon-wrapper">
@@ -1218,7 +1132,6 @@
                     <h5 class="introduce-title">
                         Plans<span class="colored"> Bestseller</span>
                     </h5>
-            
                     <p class="introduce-text">
                         Lorem ipsum dolor sit amet, consectetur 
                         <span class="colored"> adipiscing elit.</span> 
@@ -1228,158 +1141,83 @@
                 </div>
                 <div class="container">
                     <div class="card-group row">
-            
                         <div class="offer-item col-12 col-sm-6 col-md-6 col-lg">
-                            <div class="card text-center">
-                                <div class="card-header offer-title">
-                                    Reseller
-                                </div>
-                
-                                <div class="card-body offer-price">
+                            <div class="item-card card text-center">
+                                <h5 class="item-card-title card-header">Reseller</h5>
+                                <p class="item-card-price card-body m-0">
                                     199$ <span class="year">year</span> 
-                                </div>
-                
-                                <ul class="offer-datasheet list-group list-group-flush">
-                                    <li class="list-group-item ">
-                                        CPU E3-1230 3.3GHz 8MB-V2
-                                    </li>
-                                    <li class="list-group-item">
-                                        HARD 500GB SATA 7200 RPM
-                                    </li>
-                                    <li class="list-group-item">
-                                        RAM 8GB DDR3 1333MHZ ECC
-                                    </li>
-                                    <li class="list-group-item">
-                                        Traffic 10 TB
-                                    </li>
-                                    <li class="list-group-item">
-                                        Connection 100 MB
-                                    </li>
-                                    <li class="list-group-item">
-                                        5IP
-                                    </li>
+                                </p>
+                                <ul class="item-card-datasheet list-group list-group-flush">
+                                    <li class="list-group-item ">CPU E3-1230 3.3GHz 8MB-V2</li>
+                                    <li class="list-group-item">HARD 500GB SATA 7200 RPM</li>
+                                    <li class="list-group-item">RAM 8GB DDR3 1333MHZ ECC</li>
+                                    <li class="list-group-item">Traffic 10 TB</li>
+                                    <li class="list-group-item">Connection 100 MB</li>
+                                    <li class="list-group-item">5IP</li>
                                 </ul>
-                
-                                <div class="card-body offer-order">
-                                    <a href="#" class="btn btn-primary order">
-                                        Oreder now
-                                    </a>
+                                <div class="item-card-order card-body">
+                                    <a href="#" class="btn btn-primary order-btn">Oreder now </a>
                                 </div>
-                    
                             </div>
                         </div>
             
                         <div class="offer-item col-12 col-sm-6 col-md-6 col-lg col-xl">
                             <div class="card text-center">
-                                <div class="card-header offer-title">
-                                    Reseller
-                                </div>
-                
-                                <div class="card-body offer-price">
+                                <h5 class="item-card-title card-header">Reseller</h5>
+                                <p class="item-card-price card-body m-0">
                                     199$ <span class="year">year</span> 
-                                </div>
-                
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item offer-datasheet">
-                                        CPU E3-1230 3.3GHz 8MB-V2
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        HARD 500GB SATA 7200 RPM
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        RAM 8GB DDR3 1333MHZ ECC
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        Traffic 10 TB
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        Connection 100 MB
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        5IP
-                                    </li>
+                                </p>
+                                <ul class="item-card-datasheet list-group list-group-flush">
+                                    <li class="list-group-item ">CPU E3-1230 3.3GHz 8MB-V2</li>
+                                    <li class="list-group-item">HARD 500GB SATA 7200 RPM</li>
+                                    <li class="list-group-item">RAM 8GB DDR3 1333MHZ ECC</li>
+                                    <li class="list-group-item">Traffic 10 TB</li>
+                                    <li class="list-group-item">Connection 100 MB</li>
+                                    <li class="list-group-item">5IP</li>
                                 </ul>
-                
-                                <div class="card-body offer-order">
-                                    <a href="#" class="btn btn-primary order">Oreder now</a>
+                                <div class="item-card-order card-body">
+                                    <a href="#" class="btn btn-primary order-btn">Oreder now </a>
                                 </div>
-                    
                             </div>
                         </div>
             
                         <div class="offer-item col-12 col-sm-6 col-md-6 col-lg col-xl">
                             <div class="card text-center">
-                                <div class="card-header offer-title">
-                                    Reseller
-                                </div>
-                
-                                <div class="card-body offer-price">
+                                <h5 class="item-card-title card-header">Reseller</h5>
+                                <p class="item-card-price card-body m-0">
                                     199$ <span class="year">year</span> 
-                                </div>
-                
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item offer-datasheet">
-                                        CPU E3-1230 3.3GHz 8MB-V2
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        HARD 500GB SATA 7200 RPM
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        RAM 8GB DDR3 1333MHZ ECC
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        Traffic 10 TB
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        Connection 100 MB
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        5IP
-                                    </li>
+                                </p>
+                                <ul class="item-card-datasheet list-group list-group-flush">
+                                    <li class="list-group-item ">CPU E3-1230 3.3GHz 8MB-V2</li>
+                                    <li class="list-group-item">HARD 500GB SATA 7200 RPM</li>
+                                    <li class="list-group-item">RAM 8GB DDR3 1333MHZ ECC</li>
+                                    <li class="list-group-item">Traffic 10 TB</li>
+                                    <li class="list-group-item">Connection 100 MB</li>
+                                    <li class="list-group-item">5IP</li>
                                 </ul>
-                
-                                <div class="card-body offer-order">
-                                    <a href="#" class="btn btn-primary order">Oreder now</a>
+                                <div class="item-card-order card-body">
+                                    <a href="#" class="btn btn-primary order-btn">Oreder now </a>
                                 </div>
-                    
                             </div>
                         </div>
             
                         <div class="offer-item col-12 col-sm-6 col-md-6 col-lg col-xl">
                             <div class="card text-center">
-                                <div class="card-header offer-title">
-                                    Reseller
-                                </div>
-                
-                                <div class="card-body offer-price">
+                                <h5 class="item-card-title card-header">Reseller</h5>
+                                <p class="item-card-price card-body m-0">
                                     199$ <span class="year">year</span> 
-                                </div>
-                
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item offer-datasheet">
-                                        CPU E3-1230 3.3GHz 8MB-V2
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        HARD 500GB SATA 7200 RPM
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        RAM 8GB DDR3 1333MHZ ECC
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        Traffic 10 TB
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        Connection 100 MB
-                                    </li>
-                                    <li class="list-group-item offer-datasheet">
-                                        5IP
-                                    </li>
+                                </p>
+                                <ul class="item-card-datasheet list-group list-group-flush">
+                                    <li class="list-group-item ">CPU E3-1230 3.3GHz 8MB-V2</li>
+                                    <li class="list-group-item">HARD 500GB SATA 7200 RPM</li>
+                                    <li class="list-group-item">RAM 8GB DDR3 1333MHZ ECC</li>
+                                    <li class="list-group-item">Traffic 10 TB</li>
+                                    <li class="list-group-item">Connection 100 MB</li>
+                                    <li class="list-group-item">5IP</li>
                                 </ul>
-                
-                                <div class="card-body offer-order">
-                                    <a href="#" class="btn btn-primary order">Oreder now</a>
+                                <div class="item-card-order card-body">
+                                    <a href="#" class="btn btn-primary order-btn">Oreder now </a>
                                 </div>
-                    
                             </div>
                         </div>
                     </div>
@@ -1394,6 +1232,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. 
                     </p>
                 </div>
+                
                 <div class="scrollbar-wrapper">
                     <div class="scrollbar">
                         <span class="scrollbar-side"></span>
@@ -1409,7 +1248,6 @@
                         <h5 class="introduce-title">
                             our <span class="colored"> Blog </span>
                         </h5>
-                
                         <p class="introduce-text">
                             Lorem ipsum dolor sit amet, consectetur 
                             <span class="colored"> adipiscing elit.</span> 
@@ -1418,30 +1256,28 @@
                         </p>
                 </div>
                 <div class="container d-flex align-items-center flex-column">
-                    <div class="card">
-            
-                        <div class="row no-gutters">
-                            <div class="col-md-4 card-img-wrapper">
-                                <img src="./img/blog-item-img.png" class="card-img h-100" alt="...">
-                                <div class="overlay w-100 h-100"></div>
+                    <div class="blog-item card">
+                        <div class="row m-0">
+                            <div class="blog-item-img col-md-4">
+                                <img src="./img/blog-item-img.png" class="item-img">
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur </h5>
-                                    <p class="card-text ">
-                                        <small class="text-muted">
-                                            <span class="info">
-                                                <i class="fas fa-user info-user"></i>admin
+                                <div class="blog-item-body card-body">
+                                    <h5 class="blog-item-body-title card-title">Lorem ipsum dolor sit amet, consectetur </h5>
+                                    <p class="blog-item-body-icons card-text ">
+                                        <small class="info text-muted">
+                                            <span class="info-status">
+                                                <i class="fas fa-user status"></i>admin
                                             </span>
-                                            <span class="info comment">
-                                                <i class="fas fa-comment info-comment"></i>1205
+                                            <span class="info-comment">
+                                                <i class="fas fa-comment comment"></i>1205
                                             </span>
-                                            <span class="info view">
-                                                <i class="far fa-eye info-view"></i>1205
+                                            <span class="info-viev">
+                                                <i class="far fa-eye view"></i>1205
                                             </span>
                                         </small>
                                     </p>
-                                    <p class="card-text">
+                                    <p class="blog-item-body-text card-text">
                                         Integer ornare libero nisi. Duis ac magna urna. 
                                         Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla.
                                         Suspendisse nec orci vel elit aliquet blandit in non orci. 
@@ -1452,43 +1288,39 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
-                    <div class="card">
-            
-                        <div class="row no-gutters">
-                                <div class="col-md-4 card-img-wrapper">
-                                    <img src="./img/blog-item-img2.png" class="card-img h-100" alt="...">
-                                    <div class="overlay w-100 h-100"></div>
+                    <div class="blog-item card">
+                        <div class="row m-0">
+                            <div class="blog-item-img col-md-4">
+                                <img src="./img/blog-item-img2.png" class="item-img">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="blog-item-body card-body">
+                                    <h5 class="blog-item-body-title card-title">Lorem ipsum dolor sit amet, consectetur </h5>
+                                    <p class="blog-item-body-icons card-text ">
+                                        <small class="info text-muted">
+                                            <span class="info-status">
+                                                <i class="fas fa-user status"></i>admin
+                                            </span>
+                                            <span class="info-comment">
+                                                <i class="fas fa-comment comment"></i>1205
+                                            </span>
+                                            <span class="info-viev">
+                                                <i class="far fa-eye view"></i>1205
+                                            </span>
+                                        </small>
+                                    </p>
+                                    <p class="blog-item-body-text card-text">
+                                        Integer ornare libero nisi. Duis ac magna urna. 
+                                        Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla.
+                                        Suspendisse nec orci vel elit aliquet blandit in non orci. 
+                                        Vivamus posuere dui eget lacinia 
+                                        rutrum. Cum sociis natoque penatibus ...
+                                    </p>
+                                    <a href="#" class="btn btn-dark">view more</a>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur </h5>
-                                        <p class="card-text ">
-                                            <small class="text-muted">
-                                                <span class="info">
-                                                    <i class="fas fa-user info-user"></i>admin
-                                                </span>
-                                                <span class="info comment">
-                                                    <i class="fas fa-comment info-comment"></i>1205
-                                                </span>
-                                                <span class="info view">
-                                                    <i class="far fa-eye info-view"></i>1205
-                                                </span>
-                                            </small>
-                                        </p>
-                                        <p class="card-text">
-                                            Integer ornare libero nisi. Duis ac magna urna. 
-                                            Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla.
-                                            Suspendisse nec orci vel elit aliquet blandit in non orci. 
-                                            Vivamus posuere dui eget lacinia 
-                                            rutrum. Cum sociis natoque penatibus ...
-                                        </p>
-                                        <a href="#" class="btn btn-dark">view more</a>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
-            
                     </div>
                     <p class="view-more">
                         <a class="view-more-btn " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -1496,29 +1328,28 @@
                         </a>
                     </p>
                     <div class="collapse" id="collapseExample">
-                        <div class="card">
-                            <div class="row no-gutters">
-                                <div class="col-md-4 card-img-wrapper">
-                                    <img src="./img/blog-item-img2.png" class="card-img h-100" alt="...">
-                                    <div class="overlay w-100 h-100"></div>
+                        <div class="blog-item card">
+                            <div class="row m-0">
+                                <div class="blog-item-img col-md-4">
+                                    <img src="./img/blog-item-img.png" class="item-img">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur </h5>
-                                        <p class="card-text ">
-                                            <small class="text-muted">
-                                                <span class="info">
-                                                    <i class="fas fa-user info-user"></i>admin
+                                    <div class="blog-item-body card-body">
+                                        <h5 class="blog-item-body-title card-title">Lorem ipsum dolor sit amet, consectetur </h5>
+                                        <p class="blog-item-body-icons card-text ">
+                                            <small class="info text-muted">
+                                                <span class="info-status">
+                                                    <i class="fas fa-user status"></i>admin
                                                 </span>
-                                                <span class="info comment">
-                                                    <i class="fas fa-comment info-comment"></i>1205
+                                                <span class="info-comment">
+                                                    <i class="fas fa-comment comment"></i>1205
                                                 </span>
-                                                <span class="info view">
-                                                    <i class="far fa-eye info-view"></i>1205
+                                                <span class="info-viev">
+                                                    <i class="far fa-eye view"></i>1205
                                                 </span>
                                             </small>
                                         </p>
-                                        <p class="card-text">
+                                        <p class="blog-item-body-text card-text">
                                             Integer ornare libero nisi. Duis ac magna urna. 
                                             Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla.
                                             Suspendisse nec orci vel elit aliquet blandit in non orci. 
@@ -1532,88 +1363,76 @@
                         </div>
                     </div>
                 </div>
-                
-            
             </section>
             <section class="social-media">
-                <div class="overlay"></div>
-                <div class="social-media-links container">
-                    
-                    <div class="row">
+                <img src="./img/social-media-bg.png" alt="" class="social-media-bg">
             
-                        <h5 class="title col-12">
-                            Follow 
-                            <span class="colored"> Creativia</span> 
-                        </h5>
+                <div class="social-media-links container">
+                    <div class="row">
+                        <h5 class="title col-12"> Follow <span class="colored"> Creativia</span> </h5>
+                        
                         <div class="col-6 col-sm-6 col-md-3 col-lg-3 link">
-                            
-                            <div  class="hexagon-wrapper">
+                            <a href="#" class="hexagon-wrapper">
                                 <div class="hexagon">
                                     <i class="fab fa-facebook-f simbol"></i>
                                 </div>
-                            </div>                   
+                            </a>                   
                             <span class="info"> 20000</span>
                         </div>
+            
                         <div class="col-6 col-sm-6 col-md-3 col-lg-3 link">
-                            
-                            <div  class="hexagon-wrapper">
+                            <a href="#" class="hexagon-wrapper">
                                 <div class="hexagon">
                                     <i class="fab fa-twitter simbol"></i> 
                                 </div>
-                            </div>                   
+                            </a>                   
                             <span class="info"> 999000</span>
                         </div>
+            
                         <div class="col-6 col-sm-6 col-md-3 col-lg-3 link">
-                            
-                            <div  class="hexagon-wrapper">
+                            <a href="#" class="hexagon-wrapper">
                                 <div class="hexagon">
                                     <i class="fab fa-pinterest-p simbol"></i>
                                 </div>
-                                
-                            </div>                   
+                            </a>                   
                             <span class="info">5000 </span>
                         </div>
+            
                         <div class="col-6 col-sm-6 col-md-3 col-lg-3 link">
-                           
-                            <div  class="hexagon-wrapper">
+                            <a href="#" class="hexagon-wrapper">
                                 <div class="hexagon">
                                     <i class="fab fa-google-plus-g simbol"></i>
                                 </div>
-                            </div>   
+                            </a>   
                             <span class="info"> 200</span>
                         </div>
+            
                     </div>
                 </div>
+            
                 <div class="scrollbar-wrapper">
                     <div class="scrollbar">
                         <span class="scrollbar-side"></span>
-                        <div id="hex3" class="hexagon-wrapper">
-                            <div id="color3" class="hexagon"></div>
+                        <div class="hexagon-wrapper">
+                            <div class="hexagon"></div>
                         </div>
                         <span class="scrollbar-side"></span>
                     </div>
                 </div>
+            
             </section>
             <section class="contact-us">
-                <div class="introduce">
-            
-                    <h5 class="introduce-title">
-                        Find us 
-                        <span class="colored"> heare </span>
-                    </h5>
-                
+                <div class="introduce container">
+                    <h5 class="introduce-title"> Find us  <span class="colored"> heare </span> </h5>
                     <p class="introduce-text">
                         Lorem ipsum dolor sit amet, consectetur 
                         <span class="colored"> adipiscing elit.</span> 
                         Integer sed magna vel velit dignissim luctus eu in urna. 
                         Dapibus egestas turpis. 
-                    </p>
-                        
+                    </p>  
                 </div>
-                <div class="map-wrapper d-flex flex-column align-items-center order-0 order-sm-0 ">
-                    <iframe class="goggle-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276324.8191504888!2d31.258287473755487!3d27.963911006594294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z0JXQs9C40L_QtdGC!5e0!3m2!1sru!2sua!4v1553674396545" width="100%" height="578" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="wrapper container-fluid">
+                <div class="map-wrapper ">
+                    <iframe class="goggle-map order-0 order-sm-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1276324.8191504888!2d31.258287473755487!3d27.963911006594294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z0JXQs9C40L_QtdGC!5e0!3m2!1sru!2sua!4v1553674396545" width="100%" height="700px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     <div class="talk-buble-wrapper">
                         <ul class="talk-buble">
                             <li class="talk-buble-text">egypt, creativia </li>
@@ -1622,31 +1441,26 @@
                             <li class="talk-buble-text">Email: gfx3mr@gmail.com</li>
                         </ul>
                     </div>
-                        
-                    <div class="message-wrapprer d-flex flex-column align-items-end form-group order-1 order-sm-1 ">
-                        <h5 class="message-title w-100">send message</h5>
-                        <form action="#" class="w-100">
-                            <input class="form-control" type="text" placeholder="Name">
-                            <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="email">
-                            <input class="form-control form-control-sm" type="text" placeholder="Subject">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <button type="submit" class="btn btn-dark">Submit</button>
+                    <div class="message order-1 order-sm-1">
+                        <h5 class="message-title">send message</h5>
+                        <form action="#" class="message-form">
+                            <input class="message-input form-control" type="text" placeholder="Name">
+                            <input type=" email" class="message-input form-control"  aria-describedby="emailHelp" placeholder="email">
+                            <input class="message-input form-control" type="text" placeholder="Subject">
+                            <textarea class="message-input form-control" rows="3"></textarea>
+                            <button type="submit" class="btn">Submit</button>
                         </form>
                     </div>
-                </div>
-               
-                
+                </div> 
             </section>
         </main>
         <footer class="footer">
             <section class="design-by container-fluid">
-            
                 <div class="row">
-                    <div class="stub col-12 col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4"></div>
                     <div class="logo col-12 col-sm-12 col-md-4 col-lg-4">
                         <img src="./img/footer-logo.png" alt="" class="icon">
                     </div>
-                
                     <div class="copy-right col-12 col-sm-12 col-md-4 col-lg-4">Design by  Amr Srour</div>
                 </div>
             

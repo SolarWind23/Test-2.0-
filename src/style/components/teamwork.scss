@@ -1,21 +1,18 @@
 .teamwork {
- 
-    padding-bottom: 90px;
-    padding-top: 90px;
+    padding: 90px 15px;
     position: relative;
     @include introduce (100px, 50px, $b, $b);
 
-    @media (max-width: 575.98px) { 
-        padding-bottom: 20px;
+    @media (max-width: 575px) { 
         padding-top: 20px;
+        padding-bottom: 20px;
         @include media-introduce();
     };
-
-    @media (min-width: 576px) and (max-width: 767.98px) { 
+    @media (min-width: 576px) and (max-width: 767px) { 
         padding: 40px 0px;
         @include media-introduce();
     };
-    @media (min-width: 768px) and (max-width: 991.98px) {
+    @media (min-width: 768px) and (max-width: 991px) {
         padding: 50px 0px;
         .introduce {
             margin-bottom: 50px;
@@ -24,20 +21,20 @@
 
     .team {
         margin:auto;
-        @media (min-width: 360px) and (max-width: 440.98px) { 
+        @media (min-width: 360px) and (max-width: 440px) { 
             padding: 0px 15%;     
         };
-        @media (min-width: 441px) and (max-width: 575.98px) { 
+        @media (min-width: 441px) and (max-width: 575px) { 
             padding: 0px 20%;     
         };
         
-        
         &-member {
-            text-align: center;
-            position: relative;
-            border: 1px solid #e7e7e7;
             padding: 0px; 
             margin: 0px 15px;
+            text-align: center;
+            position: relative;
+            transition: all .7s;
+            border: 1px solid $gray-super-light;
             @media (max-width: 575.98px) { 
                 margin: 20px 0px;
             };
@@ -49,34 +46,31 @@
             };
             @media (min-width: 992px) and (max-width: 1199.98px) {
                 margin: 0px 15px;
-            }
+            };
             
-            transition: all .7s;
-
             &-img {
-                position: relative;
                 overflow: hidden;
-               
-
+                position: relative;
+            
                 .overlay {
-                    position: absolute;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    padding: 0px 25px;
-                    background: #262626;
                     top: -570px;
                     width: 100%;
                     height: 100%;
+                    display: flex;
+                    padding: 0px 25px;
+                    position: absolute;
+                    align-items: center;
                     transition: all .7s;
+                    background: $bl-darck;
+                    justify-content: space-around;
 
                     .icons {
-                        position: relative;
-                        display: flex;
-                        background: transparent;
-                        border: none;
-                        outline: none;
                         padding: 0px;
+                        border: none;
+                        display: flex;
+                        outline: none;
+                        position: relative;
+                        background: transparent;
 
                         &:focus{
                             border: none;
@@ -99,10 +93,10 @@
 
                         .logo {
                             color: $r;
-                            text-align: center;
-                            position: absolute;
                             bottom:50%;
                             right: 50%;
+                            text-align: center;
+                            position: absolute;
                             transform: translate(50%, 50%);
 
                             @media (min-width:  500px) and (max-width: 575.98px) { 
@@ -116,44 +110,34 @@
                             };
                             @media (min-width: 992px) and (max-width: 1199.98px) {
                                 font-size: 15px 
-                            }
-                        }
+                            };
+                        };
                     };
-                }
-
-                .member-picture{
-                    width: 100%;
                 };
-
             };
-           
 
             &-name {
                 margin: 35px 0px 25px 0px;
                 @include font-style($raleway-m, 20px, $r, uppercase)
             };
             &-activity {
-                @include font-style($lato-r, 16px, #505050, capitalize)
+                @include font-style($lato-r, 16px, $bl-light, capitalize)
             };
-
             &:hover {
                 border:1px solid;
 
                 .overlay {
                     top: 0px;
-                };
-                
-            }
-        }
-
-        
+                }; 
+            };
+        };
     };
 
     @include scroll-bar (20px, 20px, $b, relative, 100px);
-    @media (max-width: 575.98px) { 
+    @media (max-width: 575px) { 
         @include scroll-bar (20px, 20px, $b, relative, 100px,0px,50%);
     };
-    @media (min-width: 576px) and (max-width: 767.98px) {
+    @media (min-width: 576px) and (max-width: 767px) {
         @include scroll-bar (20px, 20px, $b, relative, 100px,0px,30%);
     };
 }
